@@ -15,14 +15,15 @@
     set shiftround
 
 "colors"
+    set background=dark
+    highlight LineNr ctermfg=grey ctermbg=black
 	syntax enable
-	set background=dark
-	"colorscheme graywh
-	"colorscheme desert
-
-	" solarized options ???
-    let g:solarized_termcolors=256
-	"colorscheme solarized
+    "some option for performance ?
+    set nocursorcolumn
+    set nocursorline
+    syntax sync fromstart
+    set synmaxcol=120
+    set scrolljump=10
     set hlsearch
 
 "completion"
@@ -74,9 +75,7 @@
 "For pathogen"
 execute pathogen#infect()
 
-"let g:indentLine_color_term = 235
-"let g:indentLine_color_term = 239
-"let g:indentLine_char = '|'
+let g:indentLine_color_term = 0
 "
 ""NERDTree
 "let g:NERDTreeDirArrows=0
