@@ -88,14 +88,13 @@ endf
 "
 "let g:sparkupExecuteMapping = '<s-e>'
 "
-""Syntastic
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"let g:syntastic_check_on_open=1
-"let g:syntastic_check_on_wq=0
-"let g:syntastic_error_symbol='✗'
-"
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+
 ""NeoComplCache
 "" Disable AutoComplPop.
 "let g:acp_enableAtStartup = 0
