@@ -4,3 +4,6 @@
 [submodule "bundle/indentline"]
 	path = bundle/indentline
 	url = https://github.com/Yggdroot/indentLine
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree

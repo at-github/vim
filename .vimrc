@@ -76,15 +76,15 @@
 execute pathogen#infect()
 
 let g:indentLine_color_term = 0
-"
-""NERDTree
-"let g:NERDTreeDirArrows=0
-"function! LoadNERDTree()
-"    :NERDTree
-"    call feedkeys("\<c-w>p")
-"endf
-"
-":au VimEnter * :call LoadNERDTree()
+
+"NERDTree
+let g:NERDTreeDirArrows=0
+function! LoadNERDTree()
+    :NERDTree
+    call feedkeys("\<c-w>p")
+endf
+
+:au VimEnter * :call LoadNERDTree()
 "
 "let g:sparkupExecuteMapping = '<s-e>'
 "
