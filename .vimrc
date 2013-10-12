@@ -72,7 +72,7 @@
     vmap <Space> zf<enter>
 
 "For pathogen"
-"execute pathogen#infect()
+execute pathogen#infect()
 
 "let g:indentLine_color_term = 235
 "let g:indentLine_color_term = 239
