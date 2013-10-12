@@ -85,9 +85,9 @@ function! LoadNERDTree()
 endf
 
 :au VimEnter * :call LoadNERDTree()
-"
-"let g:sparkupExecuteMapping = '<s-e>'
-"
+
+let g:sparkupExecuteMapping = '<s-e>'
+
 "Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
