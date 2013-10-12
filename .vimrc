@@ -95,8 +95,8 @@ set statusline+=%*
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
-""NeoComplCache
-"" Disable AutoComplPop.
-"let g:acp_enableAtStartup = 0
-"" Use neocomplcache.
-"let g:neocomplcache_enable_at_startup = 1
+"NeoComplCache
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
