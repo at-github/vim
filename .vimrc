@@ -86,6 +86,12 @@ endf
 
 :au VimEnter * :call LoadNERDTree()
 
+silent! nmap <C-e> :NERDTreeToggle<CR>
+silent! map <C-f> :NERDTreeFind<CR>
+"ferme l'onglet avec NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"Sparkup
 let g:sparkupExecuteMapping = '<s-e>'
 
 "Syntastic
