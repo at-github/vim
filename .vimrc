@@ -78,18 +78,8 @@ execute pathogen#infect()
 let g:indentLine_color_term = 0
 
 "NERDTree
-let g:NERDTreeDirArrows=0
-function! LoadNERDTree()
-    :NERDTree
-    call feedkeys("\<c-w>p")
-endf
-
-:au VimEnter * :call LoadNERDTree()
-
-silent! nmap <C-e> :NERDTreeToggle<CR>
-silent! map <C-f> :NERDTreeFind<CR>
-"ferme l'onglet avec NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+silent! nmap <C-a> :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup = 1
 
 "Sparkup
 let g:sparkupExecuteMapping = '<s-e>'
