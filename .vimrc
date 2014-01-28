@@ -78,21 +78,20 @@ execute pathogen#infect()
 let g:indentLine_color_term = 0
 
 "NERDTree
-silent! nmap <C-a> :NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup = 1
+    silent! nmap <C-n> :NERDTreeTabsToggle<CR>
 
 "Sparkup
-let g:sparkupExecuteMapping = '<s-e>'
+    let g:sparkupExecuteMapping = '<s-e>'
 
 "Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+    let g:syntastic_check_on_open=1
+    let g:syntastic_check_on_wq=0
 
 "NeoComplCache
 " Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
+    let g:acp_enableAtStartup = 0
 " Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
+    let g:neocomplcache_enable_at_startup = 1
