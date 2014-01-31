@@ -60,6 +60,10 @@
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     "support de la souris"
     set mouse=n
+    "Show hidden character, show space as dot and tab as 't.'"
+    set list
+    set lcs=tab:t.
+    set lcs+=trail:.
 
 "Folding"
     let javaScript_fold=1       "Javascript
