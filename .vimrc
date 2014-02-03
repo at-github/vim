@@ -94,6 +94,9 @@ let g:indentLine_color_term = 0
     let g:syntastic_check_on_open=1
     let g:syntastic_check_on_wq=0
 
+"Statline
+    let g:statline_filename_relative = 1
+
 "NeoComplCache
 " Disable AutoComplPop.
     let g:acp_enableAtStartup = 0
