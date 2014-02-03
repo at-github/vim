@@ -82,6 +82,9 @@
 "Indentline
     let g:indentLine_color_term = 0
 
+"CtrlP
+    let g:ctrlp_show_hidden = 1
+
 "NERDTree
     silent! nmap <C-n> :NERDTreeTabsToggle<CR>
 
