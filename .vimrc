@@ -76,10 +76,11 @@
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-"For pathogen"
-execute pathogen#infect()
+"For pathogen
+    execute pathogen#infect()
 
-let g:indentLine_color_term = 0
+"Indentline
+    let g:indentLine_color_term = 0
 
 "NERDTree
     silent! nmap <C-n> :NERDTreeTabsToggle<CR>
