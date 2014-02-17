@@ -1,3 +1,6 @@
+"leader
+let mapleader=","
+
 "indent"
     "Indentation toutes les quatre colonnes"
     set tabstop=4
@@ -17,7 +20,7 @@
 "colors"
     set background=dark
     highlight LineNr ctermfg=grey ctermbg=black
-	syntax enable
+    syntax enable
     "some option for performance ?
     set nocursorcolumn
     set nocursorline
@@ -91,10 +94,10 @@
     let g:ctrlp_show_hidden = 1
 
 "NERDTree
-    silent! nmap <C-n> :NERDTreeTabsToggle<CR>
+    silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
 
 "Sparkup
-    let g:sparkupExecuteMapping = '<s-e>'
+    let g:sparkupExecuteMapping = '<c-e>'
 
 "Syntastic
     set statusline+=%#warningmsg#
