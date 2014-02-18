@@ -63,6 +63,10 @@ let mapleader=","
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     "support de la souris"
     set mouse=n
+    "80 characters"
+    highlight ColorColumn ctermbg=8 guibg=#000000
+    let &colorcolumn=join(range(81,999),",")
+    let &colorcolumn="80,".join(range(120,999),",")
 
 "Split"
     set splitbelow
