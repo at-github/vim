@@ -2,7 +2,7 @@
     execute pathogen#infect()
 
 "leader
-let mapleader=","
+    let mapleader=","
 
 "indent"
     "Indentation toutes les quatre colonnes"
@@ -33,12 +33,7 @@ let mapleader=","
 
     highlight LineNr ctermfg=grey ctermbg=black
     syntax enable
-    "some option for performance ?
-    set nocursorcolumn
-    set nocursorline
     syntax sync fromstart
-    set synmaxcol=120
-    set scrolljump=10
     set hlsearch
 
 "completion"
