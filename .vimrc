@@ -1,3 +1,6 @@
+"For pathogen
+    execute pathogen#infect()
+
 "leader
 let mapleader=","
 
@@ -19,6 +22,15 @@ let mapleader=","
 
 "colors"
     set background=dark
+    colorscheme solarized
+    let g:solarized_termcolors=256
+
+    if has('gui_running')
+        set background=light
+    else
+        set background=dark
+    endif
+
     highlight LineNr ctermfg=grey ctermbg=black
     syntax enable
     "some option for performance ?
@@ -88,8 +100,6 @@ let mapleader=","
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-"For pathogen
-    execute pathogen#infect()
 
 "Indentline
     let g:indentLine_color_term = 0
