@@ -101,6 +101,7 @@
 
 "CtrlP
     let g:ctrlp_show_hidden = 1
+    nnoremap <leader>p :CtrlPTag<cr>
 
 "NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
