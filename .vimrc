@@ -1,10 +1,10 @@
-"For pathogen
+"For pathogen"
     execute pathogen#infect()
 
-"leader
+"Leader"
     let mapleader=","
 
-"indent"
+"Indent"
     "Indentation toutes les quatre colonnes"
     set tabstop=4
     "Conversion des tabulations en espaces"
@@ -20,7 +20,7 @@
     "Indentation a la marque de Tab la plus proche "
     set shiftround
 
-"colors"
+"Colors"
     set background=dark
     colorscheme solarized
     let g:solarized_termcolors=256
@@ -36,7 +36,7 @@
     syntax sync fromstart
     set hlsearch
 
-"completion"
+"Completion"
     "To turn on omnicompletion"
     filetype plugin on
     set ofu=syntaxcomplete#Complete
@@ -53,7 +53,7 @@
     autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 
-"other"
+"Other"
     "Affiche les numeros de lignes"
     set number
     "Ignore la casse lors de recherche"
@@ -101,34 +101,38 @@
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
 
-"Indentline
+"Indentline"
     let g:indentLine_color_term = 0
 
-"CtrlP
+"CtrlP"
     let g:ctrlp_show_hidden = 1
     nnoremap <leader>p :CtrlPTag<cr>
 
 "NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
 
-"Sparkup
+"Sparkup"
     let g:sparkupExecuteMapping = '<c-e>'
 
-"Syntastic
+"Syntastic"
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
     let g:syntastic_check_on_open=1
     let g:syntastic_check_on_wq=0
 
-"Statline
+"Statline"
     let g:statline_filename_relative = 1
 
-"NeoComplCache
-" Disable AutoComplPop.
+"NeoComplCache"
+"Disable AutoComplPop."
     let g:acp_enableAtStartup = 0
-" Use neocomplcache.
+"Use neocomplcache."
     let g:neocomplcache_enable_at_startup = 1
 
-" Tagbar
-nnoremap <silent> <Leader>t :TagbarToggle<CR>
+"Tagbar"
+    nnoremap <silent> <Leader>t :TagbarToggle<CR>
+
+"Snippet"
+    au BufRead *.php set ft=php.html
+    au BufNewFile *.php set ft=php.html
