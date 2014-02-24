@@ -74,7 +74,7 @@ snippet script
 	<script type="text/javascript" charset="utf-8">
 		${1}
 	</script>${2}
-snippet scriptsrc
+snippet jssrc
 	<script src="${1}.js" type="text/javascript" charset="utf-8"></script>${2}
 snippet style
 	<style type="text/css" media="${1:screen}">
@@ -84,11 +84,14 @@ snippet base
 	<base href="${1}" target="${2}"`Close()`>
 snippet r
 	<br`Close()[1:]`>
-snippet div
+snippet divid
 	<div id="${1:name}">
 		${2}
 	</div>
-# Embed QT Movie
+snippet divclass
+	<div class="${1:name}">
+		${2}
+	</div>
 snippet fieldset
 	<fieldset id="$1">
 		<legend>${1:name}</legend>
@@ -98,14 +101,27 @@ snippet fieldset
 snippet form
 	<form action="${1:`Filename('$1_submit')`}" method="${2:get}" accept-charset="utf-8">
 		${3}
-
-
-	<p><input type="submit" value="Continue &rarr;"`Close()`></p>
 	</form>
-snippet h1
+snippet h1id
 	<h1 id="${1:heading}">${2:$1}</h1>
 snippet input
-	<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="${3}"`Close()`>${4}
+	<input type="${1:text|submit|hidden}" name="${2:some_name}" value="${3}"`Close()`>${4}
+snippet inputnb
+	<input type="number" name="${1:some_name}" value="${2}" min="${3}" max="${4}" step="${5}">${6}
+snippet inputtel
+	<input type="tel" name="${1:some_name}" value="${2}" ${3:required}>${4}
+snippet inputemail
+	<input type="email" name="${1:some_name}" value="${2}" ${3:required}>${4}
+snippet inputurl
+	<input type="url" name="${1:some_name}">${2}
+snippet inputs
+	<input type="search" name="${1:some_name}">${2}
+snippet inputrange
+	<input type="range" name="${1:some_name}" min="${2}" max="${3}">${4}
+snippet inputdate
+	<input type="date" name="${1:some_name}" min="${2}" max="${3}">${4}
+snippet inputcolor
+	<input type="color" name="${1:some_name}">${2}
 snippet label
 	<label for="${2:$1}">${1:name}</label><input type="${3:text/submit/hidden/button}" name="${4:$2}" value="${5}" id="${6:$2}"`Close()`>${7}
 snippet link
@@ -116,16 +132,36 @@ snippet meta
 	<meta name="${1:name}" content="${2:content}"`Close()`>${3}
 snippet opt
 	<option value="${1:option}">${2:$1}</option>${3}
-snippet optt
-	<option>${1:option}</option>${2}
 snippet select
 	<select name="${1:some_name}" id="${2:$1}">
 		<option value="${3:option}">${4:$3}</option>
 	</select>${5}
 snippet table
-	<table border="${1:0}">
-		<tr><th>${2:Header}</th></tr>
-		<tr><th>${3:Data}</th></tr>
-	</table>${4}
+	<table id="${1:id}" class="${2:class}">
+		<thead>
+			<tr><th>${3:Header}</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>${4:Data}</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td>${5:Footer}</td></tr>
+		</tfoot>
+	</table>${6}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet dfn
+	<p>${1:some text}<dfn id="${2:id}">${3:To be defined}</dfn>${4:some texte}</p>
+	<dl>
+		<dt>
+			<dfn>$3</dfn>
+		</dt>
+		<dl>${5:definition}</dl>
+	</dl>${6}
+snippet btn
+	<button id="${1}" class="${2}" type="${3:button|reset|submit}">${4}</button>${5}
+snippet header
+	<header id="${1}" class="${2}">
+		<h1>${3}</h1>
+		<p>${4}</p>
+	</header>${5}
