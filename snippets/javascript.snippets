@@ -6,7 +6,7 @@ snippet proto
 	};
 # Function
 snippet fun
-	function ${1:function_name} (${2:argument}) {
+	function ${1:function_name} (${2:argument}){
 		${3:// body...}
 	}
 # Anonymous Function
@@ -40,8 +40,8 @@ snippet case
 	${3}
 # for (...) {...}
 snippet for
-	for (var ${2:i} = 0; $2 < ${1:Things}.length; $2${3:++}) {
-		${4:$1[$2]}
+	for (var ${1:i} = 0, ${2:j} = ${3:array.length}; $2 < $1; $1${4:++}){
+		${5:stuff};
 	};
 # for (...) {...} (Improved Native For-Loop)
 snippet forr
@@ -72,3 +72,9 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+snippet addevt
+	${1:elt}.addEventListener("${2:event}", ${3:function}, ${4:false|true});${5}
+snippet rmevt
+	${1:elt}.removeEventListener("${2:event}", ${3:function}, ${4:false|true});${5}
+snippet pushstate
+	history.pushState(${1:data}, "${2:title}", "${3:url}");${4}
