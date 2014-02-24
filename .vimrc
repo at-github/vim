@@ -95,6 +95,7 @@
     set list
     set lcs=tab:t.
     set lcs+=trail:.
+    map <c-l> :set list!<CR>
 
 "Folding"
     let javaScript_fold=1       "Javascript
