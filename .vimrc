@@ -52,6 +52,16 @@
     "Php
     autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+"Tags"
+    set tags=~/.tags;
+    "open in page"
+    "<C-]>"
+    "open in vsplit"
+    map <C-@> :vsplit<CR>:exec("tag ".expand("<cword>"))<CR>
+    "open in tab"
+    map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+    "open in split"
+    map <C-^> :split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 "Other"
     "Affiche les numeros de lignes"
