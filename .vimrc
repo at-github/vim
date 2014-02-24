@@ -112,6 +112,7 @@
 
 "NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
+    let g:NERDTreeDirArrows=0
 
 "Sparkup"
     let g:sparkupExecuteMapping = '<c-e>'
