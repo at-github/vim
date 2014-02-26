@@ -150,3 +150,8 @@
 "Snippet"
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
+
+"Specific local config"
+    if filereadable(glob("~/.vimrc.local"))
+        source ~/.vimrc.local
+    endif
