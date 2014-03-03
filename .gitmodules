@@ -32,6 +32,3 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/vim-staline"]
-	path = bundle/vim-staline
-	url = https://github.com/millermedeiros/vim-statline
