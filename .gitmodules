@@ -11,6 +11,3 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule "bundle/tComment"]
-	path = bundle/tComment
-	url = https://github.com/vim-scripts/tComment
