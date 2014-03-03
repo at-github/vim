@@ -178,6 +178,8 @@ filetype plugin indent on     " required
 
 "Sparkup"
     let g:sparkupExecuteMapping = '<c-e>'
+    "Find a better settings, aspecially in php files
+    let g:sparkupMappingInsertModeOnly = 1
 
 "Syntastic"
     set statusline+=%#warningmsg#
