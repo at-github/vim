@@ -5,6 +5,3 @@
 	path = bundle/indentline
 	url = https://github.com/Yggdroot/indentLine
     ignore = dirty
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree
