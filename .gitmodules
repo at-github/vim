@@ -35,6 +35,3 @@
 [submodule "bundle/vim-staline"]
 	path = bundle/vim-staline
 	url = https://github.com/millermedeiros/vim-statline
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
