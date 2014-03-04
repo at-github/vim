@@ -37,6 +37,7 @@ Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'bingaman/vim-sparkup'
+Bundle 'plasticboy/vim-markdown'
 
 filetype plugin indent on     " required
 "
