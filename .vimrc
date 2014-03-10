@@ -38,6 +38,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'evanmiller/nginx-vim-syntax'
 
 filetype plugin indent on     " required
 "
