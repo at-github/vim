@@ -39,6 +39,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'evanmiller/nginx-vim-syntax'
+Bundle "pangloss/vim-javascript"
 
 filetype plugin indent on     " required
 "
