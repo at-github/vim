@@ -194,6 +194,9 @@ filetype plugin indent on     " required
 "Statline"
     let g:statline_filename_relative = 1
 
+"Fugitive"
+    let g:statline_fugitive = 1
+
 "NeoComplCache"
 "Disable AutoComplPop."
     let g:acp_enableAtStartup = 0
