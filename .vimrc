@@ -133,7 +133,8 @@ filetype plugin indent on     " required
     "Si vim ne se souvient pas de la position precedente du curseur"
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     "support de la souris"
-    set mouse=n
+    set mouse=a
+    set ttymouse=xterm2
     "80 characters"
     highlight ColorColumn ctermbg=235 guibg=#262626
     if exists('&colorcolumn')
