@@ -326,11 +326,12 @@ snippet fun
 # $... = array(...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
-snippet pdump
-	echo '<pre>';
-	var_dump($${1});
-	echo '</pre>';${2}
 snippet pd
 	echo '<pre>';
 	var_dump($${1});
 	echo '</pre>';${2}
+snippet pdd
+	echo '<pre>';
+	var_dump($${1});
+	echo '</pre>';
+	die();${2}
