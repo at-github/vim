@@ -94,18 +94,19 @@ filetype plugin indent on     " required
 "Completion"
     "To turn on omnicompletion"
     filetype plugin on
-    set ofu=syntaxcomplete#Complete
-    "Suggest command"
-    set wildmode=longest,full
-    set wildmenu
-    "Html
-    autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-    "Css
-    autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-    "Javascript
-    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-    "Php
-    autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+    "Auto complete for all langages"
+    set omnifunc=syntaxcomplete#Complete
+
+    "Source of completion, to verify"
+    set complete=.,b,u,]
+
+    "Doesn't select the first completion item, but rather
+    "just inserts the longest common text of all matches; and the menu will
+    "come up even if there's only one match. (The longest setting is
+    "responsible for the former effect and the menuone is responsible for the
+    "latter.)
+    set completeopt=longest,menuone
 
 "Tags"
     set tags=~/.tags;
