@@ -40,6 +40,7 @@ Bundle 'bingaman/vim-sparkup'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'evanmiller/nginx-vim-syntax'
 Bundle "pangloss/vim-javascript"
+Bundle "terryma/vim-multiple-cursors"
 
 filetype plugin indent on     " required
 "
