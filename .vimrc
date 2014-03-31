@@ -24,7 +24,6 @@ Bundle 'gmarik/vundle'
 "Bundle 'git://git.wincent.com/command-t.git'
 
 Bundle 'tpope/vim-surround'
-Bundle 'millermedeiros/vim-statline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'othree/html5.vim'
 Bundle 'altercation/vim-colors-solarized.git'
@@ -41,6 +40,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'evanmiller/nginx-vim-syntax'
 Bundle "pangloss/vim-javascript"
 Bundle "terryma/vim-multiple-cursors"
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required
 "
@@ -207,6 +207,10 @@ filetype plugin indent on     " required
 
 "Tagbar"
     nnoremap <silent> <Leader>t :TagbarToggle<CR>
+
+"Airline"
+    set laststatus=2
+    let g:airline#extensions#tabline#enabled = 1
 
 "Snippet"
     au BufRead *.php set ft=php.html
