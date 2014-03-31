@@ -217,6 +217,11 @@ filetype plugin indent on     " required
     set laststatus=2
     let g:airline#extensions#tabline#enabled = 1
 
+"Html5"
+    let g:html5_rdfa_attributes_complete = 0
+    let g:html5_microdata_attributes_complete = 0
+    let g:html5_aria_attributes_complete = 0
+
 "Snippet"
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
