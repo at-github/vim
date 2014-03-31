@@ -6,4 +6,4 @@ ln -s $HOME/.vim/.vimrc $HOME
 git submodule init
 git submodule update
 
-# TODO Install with Vundle
+vim +BundleInstall +qall
