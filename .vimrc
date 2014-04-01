@@ -42,6 +42,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "terryma/vim-multiple-cursors"
 Bundle 'bling/vim-airline'
 Bundle 'kien/tabman.vim'
+Bundle 'sjl/gundo.vim'
 
 filetype plugin indent on     " required
 "
@@ -222,6 +223,9 @@ filetype plugin indent on     " required
     let g:html5_rdfa_attributes_complete = 0
     let g:html5_microdata_attributes_complete = 0
     let g:html5_aria_attributes_complete = 0
+
+"Gundo"
+    map <Leader>z :GundoToggle<CR>
 
 "Snippet"
     au BufRead *.php set ft=php.html
