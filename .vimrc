@@ -41,6 +41,7 @@ Bundle 'evanmiller/nginx-vim-syntax'
 Bundle "pangloss/vim-javascript"
 Bundle "terryma/vim-multiple-cursors"
 Bundle 'bling/vim-airline'
+Bundle 'kien/tabman.vim'
 
 filetype plugin indent on     " required
 "
