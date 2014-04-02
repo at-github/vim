@@ -95,7 +95,14 @@ filetype plugin indent on     " required
     highlight LineNr ctermfg=grey ctermbg=black
     syntax enable
     syntax sync fromstart
+
+"Search"
+    "Hightlight all result"
     set hlsearch
+    nmap <leader>p :cprev<cr>
+    nmap <leader>P :cfirst<cr>
+    nmap <leader>n :cnext<cr>
+    nmap <leader>N :clast<cr>
 
 "Completion"
     "To turn on omnicompletion"
@@ -195,7 +202,7 @@ filetype plugin indent on     " required
 
 "CtrlP"
     let g:ctrlp_show_hidden = 1
-    nnoremap <leader>p :CtrlPTag<cr>
+    nnoremap <space>p :CtrlPTag<cr>
 
 "NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
