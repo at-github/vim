@@ -62,12 +62,22 @@ filetype plugin indent on     " required
     let mapleader=","
 
 "Indent"
-    "Indentation toutes les quatre colonnes"
-    set tabstop=4
     "Conversion des tabulations en espaces"
     set expandtab
-    "Indentation de quatre colonnes "
-    set shiftwidth=4
+    "Indentation toutes les n colonnes en fonction du type de fichier"
+    "legend:
+    "ts  tabstop"
+    "sts softtabstop
+    "sw  shiftwidth
+    if has("autocmd")
+        autocmd FileType make set local ts=8 sts=8 sw=8 noexpandtab
+        autocmd FileType html set local ts=2 sts=2 sw=2 expandtab
+        autocmd FileType css set local ts=2 sts=2 sw=2 expandtab
+        autocmd FileType javascript set local ts=4 sts=4 sw=4 expandtab
+        autocmd FileType python set local ts=4 sts=4 sw=4 expandtab
+        autocmd FileType php set local ts=4 sts=4 sw=4 expandtab
+        autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+    endif
     "Indentation intelligents "
     set smartindent
     " Conserve l'indentation courante sur les nouvelles lignes "
@@ -252,6 +262,7 @@ filetype plugin indent on     " required
     map <Leader>z :GundoToggle<CR>
 
 "Snippet"
+"Todo: move this with tabulation"
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
 
