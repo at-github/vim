@@ -78,15 +78,19 @@ filetype plugin indent on     " required
     set shiftround
 
 "Colors"
-    set background=dark
+    " Cannot use togglebg with this option,
+    " Use solarized colors in terminal and toggle is ok
+    " Or use this option but togglebg will not working properly
+    " let g:solarized_termcolors=256
+
     colorscheme solarized
-    let g:solarized_termcolors=256
 
     if has('gui_running')
         set background=light
     else
         set background=dark
     endif
+    call togglebg#map("<c-b>")
 
     highlight LineNr ctermfg=grey ctermbg=black
     syntax enable
