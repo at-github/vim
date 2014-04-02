@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+﻿set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -160,7 +160,9 @@ filetype plugin indent on     " required
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
     " tab not working for now :s
-    set listchars=tab:▸\ ,eol:¬,trail:.
+    set listchars=tab:t\
+    set listchars+=trail:.
+    set listchars+=eol:f
     map <c-l> :set list!<CR>
 
 "Folding"
