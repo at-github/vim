@@ -156,8 +156,11 @@ filetype plugin indent on     " required
 
 "Show hidden character, show space as dot and tab as 't.'"
     set list
-    set lcs=tab:t.
-    set lcs+=trail:.
+    highlight NonText ctermfg=238
+    highlight SpecialKey ctermfg=238
+    " Use the same symbols as TextMate for tabstops and EOLs
+    " tab not working for now :s
+    set listchars=tab:▸\ ,eol:¬,trail:.
     map <c-l> :set list!<CR>
 
 "Folding"
