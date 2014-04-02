@@ -150,6 +150,14 @@ filetype plugin indent on     " required
         let &colorcolumn="80,".join(range(120,999),",")
     endif
 
+    "define special key instead change term value
+    map <esc>OH <home>
+    cmap <esc>OH <home>
+    imap <esc>OH <home>
+    map <esc>OF <end>
+    cmap <esc>OF <end>
+    imap <esc>OF <end> 
+
 "Split"
     set splitbelow
     set splitright
