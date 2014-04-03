@@ -70,12 +70,12 @@ filetype plugin indent on     " required
     "sts softtabstop
     "sw  shiftwidth
     if has("autocmd")
-        autocmd FileType make set local ts=8 sts=8 sw=8 noexpandtab
-        autocmd FileType html set local ts=2 sts=2 sw=2 expandtab
-        autocmd FileType css set local ts=2 sts=2 sw=2 expandtab
-        autocmd FileType javascript set local ts=4 sts=4 sw=4 expandtab
-        autocmd FileType python set local ts=4 sts=4 sw=4 expandtab
-        autocmd FileType php set local ts=4 sts=4 sw=4 expandtab
+        autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+        autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+        autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+        autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
+        autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+        autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
         autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     endif
     "Indentation intelligents "
