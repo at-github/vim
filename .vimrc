@@ -55,9 +55,6 @@ filetype plugin indent on     " required
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-"For pathogen"
-    execute pathogen#infect()
-
 "Leader"
     let mapleader=","
 
