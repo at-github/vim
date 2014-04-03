@@ -142,6 +142,13 @@ filetype plugin indent on     " required
     :map <esc>[1;5C <C-Right> <c-w>l
     :map <esc>[1;5A <C-Up> <c-w>k
     :map <esc>[1;5B <C-Down> <c-w>j
+
+"Tab"
+    "Signal for pageUp"
+    :map <esc>[5;5~ gt
+    "Signal for pageDown"
+    :map <esc>[6;5~ gT
+
 "Tags"
     set tags=~/.tags;
     "open in page"
