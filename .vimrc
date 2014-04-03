@@ -135,6 +135,13 @@ filetype plugin indent on     " required
     map <Home> gg
     map <End> G
 
+"Split"
+    set splitbelow
+    set splitright
+    :map <esc>[1;5D <C-Left> <c-w>h
+    :map <esc>[1;5C <C-Right> <c-w>l
+    :map <esc>[1;5A <C-Up> <c-w>k
+    :map <esc>[1;5B <C-Down> <c-w>j
 "Tags"
     set tags=~/.tags;
     "open in page"
@@ -178,10 +185,6 @@ filetype plugin indent on     " required
     map <esc>OF <end>
     cmap <esc>OF <end>
     imap <esc>OF <end> 
-
-"Split"
-    set splitbelow
-    set splitright
 
 "Show hidden character, show space as dot and tab as 't.'"
     set list
