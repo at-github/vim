@@ -188,7 +188,7 @@ filetype plugin indent on     " required
     imap <esc>OH <home>
     map <esc>OF <end>
     cmap <esc>OF <end>
-    imap <esc>OF <end> 
+    imap <esc>OF <end>
 
 "Show hidden character, show space as dot and tab as 't.'"
     set list
@@ -196,7 +196,7 @@ filetype plugin indent on     " required
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
     " tab not working for now :s
-    set listchars=tab:t\
+    set listchars=tab:t.
     set listchars+=trail:.
     set listchars+=eol:f
     map <c-l> :set list!<CR>
