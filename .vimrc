@@ -131,6 +131,10 @@ filetype plugin indent on     " required
     "latter.)
     set completeopt=longest,menuone
 
+"Navigation"
+    map <Home> gg
+    map <End> G
+
 "Tags"
     set tags=~/.tags;
     "open in page"
