@@ -134,8 +134,10 @@ filetype plugin indent on     " required
 
 "Bubbling text"
     "Note: not perfect when move to the first line"
-    vmap <C-k> xkP`[V`]
-    vmap <C-j> xp`[V`]
+    vmap <C-k> xkP`[v`]
+    vmap <C-j> xp`[v`]
+    vmap <C-h> xbP`[v`]
+    vmap <C-l> xep`[v`]
 
 "Split"
     set splitbelow
@@ -220,7 +222,7 @@ filetype plugin indent on     " required
     set listchars=tab:t.
     set listchars+=trail:.
     set listchars+=eol:f
-    map <c-l> :set list!<CR>
+    nmap <c-l> :set list!<CR>
 
 "Folding"
     let javaScript_fold=1       "Javascript
