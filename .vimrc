@@ -132,6 +132,11 @@ filetype plugin indent on     " required
     map <Home> gg
     map <End> G
 
+"Bubbling text"
+    "Note: not perfect when move to the first line"
+    vmap <C-k> xkP`[V`]
+    vmap <C-j> xp`[V`]
+
 "Split"
     set splitbelow
     set splitright
