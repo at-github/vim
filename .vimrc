@@ -182,6 +182,16 @@ filetype plugin indent on     " required
         let &colorcolumn="80,".join(range(120,999),",")
     endif
 
+    " Lang and corrector
+    set spelllang=en,fr
+    set spell
+
+    " Source vimrc après l'avoir sauvegarder
+    " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
+    if has("autocmd")
+      autocmd bufwritepost .vimrc source $MYVIMRC
+    endif
+
     "define special key instead change term value
     map <esc>OH <home>
     cmap <esc>OH <home>
