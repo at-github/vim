@@ -43,6 +43,7 @@ Bundle "terryma/vim-multiple-cursors"
 Bundle 'bling/vim-airline'
 Bundle 'kien/tabman.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'godlygeek/tabular'
 
 filetype plugin indent on     " required
 "
