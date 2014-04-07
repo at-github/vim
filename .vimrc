@@ -129,6 +129,13 @@ filetype plugin indent on     " required
     set completeopt=longest,menuone
 
 "Navigation"
+    "define special key instead change term value
+    map <esc>OH <home>
+    cmap <esc>OH <home>
+    imap <esc>OH <home>
+    map <esc>OF <end>
+    cmap <esc>OF <end>
+    imap <esc>OF <end> 
     map <Home> gg
     map <End> G
 
@@ -165,6 +172,8 @@ filetype plugin indent on     " required
     map <C-^> :split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 "Other"
+    "Linebreak"
+    set wrap linebreak nolist
     "Affiche les numeros de lignes"
     set number
     "Ignore la casse lors de recherche"
@@ -214,7 +223,6 @@ filetype plugin indent on     " required
     imap <esc>OF <end>
 
 "Show hidden character, show space as dot and tab as 't.'"
-    set list
     highlight NonText ctermfg=238
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
