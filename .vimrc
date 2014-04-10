@@ -148,6 +148,7 @@ filetype plugin indent on     " required
     vmap <C-l> xep`[v`]
 
 "Split"
+    "Todo: not working everywhere
     set splitbelow
     set splitright
     :map <esc>[1;5D <C-Left> <c-w>h
