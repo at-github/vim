@@ -176,7 +176,7 @@ filetype plugin indent on     " required
     "Linebreak"
     set wrap linebreak nolist
     "Affiche les numeros de lignes"
-    set number
+    set relativenumber
     "Ignore la casse lors de recherche"
     set ignorecase
     "Modifie la casse"
