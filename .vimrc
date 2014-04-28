@@ -264,7 +264,7 @@ filetype plugin indent on     " required
 
 "Sparkup"
     let g:sparkupExecuteMapping = '<c-e>'
-    "Find a better settings, aspecially in php files
+    "Todo: Find a better settings, aspecially in php files
     let g:sparkupMappingInsertModeOnly = 1
 
 "Syntastic"
@@ -292,6 +292,7 @@ filetype plugin indent on     " required
 
 "Tagbar"
     nnoremap <silent> <Leader>t :TagbarToggle<CR>
+    let g:tagbar_sort = 0
 
 "Airline"
     set laststatus=2
