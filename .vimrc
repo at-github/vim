@@ -235,6 +235,8 @@ filetype plugin indent on     " required
     nmap <c-l> :set list!<CR>
 
 "Folding"
+    set foldcolumn=3
+    set foldmethod=marker
     let javaScript_fold=1       "Javascript
     let php_folding=1           "PHP
     let r_syntax_foldin=1       "R
