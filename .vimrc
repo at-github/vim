@@ -206,9 +206,9 @@ filetype plugin indent on     " required
 
     " Source vimrc après l'avoir sauvegarder
     " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
-    if has("autocmd")
-      autocmd bufwritepost .vimrc source $MYVIMRC
-    endif
+    " if has("autocmd")
+    "   autocmd bufwritepost .vimrc source $MYVIMRC
+    " endif
 
     " Source vimrc après l'avoir sauvegarder
     " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
