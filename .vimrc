@@ -67,6 +67,8 @@ filetype plugin indent on     " required
     "ts  tabstop"
     "sts softtabstop
     "sw  shiftwidth
+
+    "Todo make indentation by default 4 space
     if has("autocmd")
         autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
         autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
