@@ -1,4 +1,10 @@
-#Console
+# Comments
+snippet /*
+	/*
+	 *
+	 */
+
+# Console
 snippet c
 	console.log(${1:var});${2}
 snippet ci
@@ -19,9 +25,15 @@ snippet proto
 	function(${3:first_argument}) {
 		${4:// body...}
 	};
+
 # Function
 snippet fun
-	function ${1:function_name} (${2:argument}){
+	/*
+	 * Brief :
+	 * Param :
+	 * Return:
+	 */
+	function ${1:function_name}(${2:argument}){
 		${3:// body...}
 	}
 # Anonymous Function
@@ -29,17 +41,22 @@ snippet f
 	function(${1}) {${2}};
 # if
 snippet if
-	if (${1:true}) {${2}}
+	if(${1:true}){
+		${2}
+	}
 # if ... else
 snippet ife
-	if (${1:true}) {${2}}
-	else{${3}}
+	if(${1:true}){
+		${2}
+	}else{
+		${3}
+	}
 # tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
 # switch
 snippet switch
-	switch(${1:expression}) {
+	switch(${1:expression}){
 		case '${3:case}':
 			${4:// code}
 			break;
