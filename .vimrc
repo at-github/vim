@@ -253,6 +253,7 @@ filetype plugin indent on     " required
 
 "CtrlP"
     let g:ctrlp_show_hidden = 1
+    let g:ctrlp_max_files=0
     nnoremap <space>p :CtrlPTag<cr>
 
 "NERDTree
