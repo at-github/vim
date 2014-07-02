@@ -313,3 +313,8 @@ filetype plugin indent on     " required
     if filereadable(glob("~/.vimrc.local"))
         source ~/.vimrc.local
     endif
+
+"Bépo"
+    if !empty(system("setxkbmap -print|grep bepo"))
+        source ~/.vim/.vimrc.bepo
+    endif
