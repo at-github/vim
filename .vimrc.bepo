@@ -1,2 +1,12 @@
 "Sauvegarder
 noremap éé :w<enter>
+
+"Buffer
+noremap w <C-w>
+
+"Esc
+" Todo: not working right now
+inoremap <Tab> <Esc>
+inoremap &lt;S-Tab> <Tab>
+vnoremap <Tab> <Esc>
+vnoremap &lt;S-Tab> <Tab>
