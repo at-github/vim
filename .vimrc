@@ -166,13 +166,15 @@ filetype plugin indent on     " required
 "Tags"
     set tags=~/.tags;
     "open in page"
-    "<C-]>"
+    map <F1> :exec("tag ".expand("<cword>"))<CR>
     "open in vsplit"
-    map <C-@> :vsplit<CR>:exec("tag ".expand("<cword>"))<CR>
-    "open in tab"
-    map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+    map <F2> :vsplit<CR>:exec("tag ".expand("<cword>"))<CR>
     "open in split"
-    map <C-^> :split<CR>:exec("tag ".expand("<cword>"))<CR>
+    map <F3> :split<CR>:exec("tag ".expand("<cword>"))<CR>
+    "open in tab"
+    map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+    "Todo: update script with args source and target
+    "map <F6> :!generateTags.sh<CR>
 
 "Other"
     "Linebreak"
