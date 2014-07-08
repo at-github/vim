@@ -137,7 +137,7 @@ filetype plugin indent on     " required
     imap <esc>OH <home>
     map <esc>OF <end>
     cmap <esc>OF <end>
-    imap <esc>OF <end> 
+    imap <esc>OF <end>
     map <Home> gg
     map <End> G
 
@@ -175,51 +175,6 @@ filetype plugin indent on     " required
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
     "Todo: update script with args source and target
     "map <F6> :!generateTags.sh<CR>
-
-"Other"
-    "Linebreak"
-    set wrap linebreak nolist
-    "Affiche les numeros de lignes"
-    set number
-    "Ignore la casse lors de recherche"
-    set ignorecase
-    "Modifie la casse"
-    set smartcase
-    "affiche le mode d'edition"
-    set showmode
-    "affiche la position du curseur"
-    set ruler
-    " affiche les commandes incompletes"
-    set showcmd
-    "Si vim ne se souvient pas de la position precedente du curseur"
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-    "support de la souris"
-    set mouse=a
-    set ttymouse=xterm2
-    "80 characters"
-    highlight ColorColumn ctermbg=235 guibg=#262626
-    if exists('&colorcolumn')
-        let &colorcolumn=join(range(81,999),",")
-        let &colorcolumn="80,".join(range(120,999),",")
-    endif
-
-    " Lang and corrector
-    set spelllang=en,fr
-    set spell
-
-    " Source vimrc après l'avoir sauvegarder
-    " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
-    " if has("autocmd")
-    "   autocmd bufwritepost .vimrc source $MYVIMRC
-    " endif
-
-    "define special key instead change term value
-    map <esc>OH <home>
-    cmap <esc>OH <home>
-    imap <esc>OH <home>
-    map <esc>OF <end>
-    cmap <esc>OF <end>
-    imap <esc>OF <end>
 
 "Show hidden character, show space as dot and tab as 't.'"
     highlight NonText ctermfg=238
@@ -320,3 +275,50 @@ filetype plugin indent on     " required
     if !empty(system("setxkbmap -print|grep bepo"))
         source ~/.vim/.vimrc.bepo
     endif
+
+"Other"
+    "Linebreak"
+    set wrap linebreak nolist
+    "Affiche les numeros de lignes"
+    set number
+    "Ignore la casse lors de recherche"
+    set ignorecase
+    "Modifie la casse"
+    set smartcase
+    "affiche le mode d'edition"
+    set showmode
+    "affiche la position du curseur"
+    set ruler
+    " affiche les commandes incompletes"
+    set showcmd
+    "Si vim ne se souvient pas de la position precedente du curseur"
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    "support de la souris"
+    set mouse=a
+    set ttymouse=xterm2
+    "80 characters"
+    highlight ColorColumn ctermbg=235 guibg=#262626
+    if exists('&colorcolumn')
+        let &colorcolumn=join(range(81,999),",")
+        let &colorcolumn="80,".join(range(120,999),",")
+    endif
+
+    " Lang and corrector
+    set spelllang=en,fr
+    set spell
+
+    " Source vimrc après l'avoir sauvegarder
+    " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
+    " if has("autocmd")
+    "   autocmd bufwritepost .vimrc source $MYVIMRC
+    " endif
+
+    "define special key instead change term value
+    map <esc>OH <home>
+    cmap <esc>OH <home>
+    imap <esc>OH <home>
+    map <esc>OF <end>
+    cmap <esc>OF <end>
+    imap <esc>OF <end>
+
+    map <F5> :e!<CR>
