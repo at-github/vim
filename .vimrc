@@ -275,6 +275,7 @@ filetype plugin indent on     " required
     if !empty(system("setxkbmap -print|grep bepo"))
         source ~/.vim/.vimrc.bepo
     endif
+    map <F7> :source ~/.vim/.vimrc.bepo<CR>
 
 "Other"
     "Linebreak"
