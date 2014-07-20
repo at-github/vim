@@ -44,6 +44,7 @@ Bundle 'bling/vim-airline'
 Bundle 'kien/tabman.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
+Bundle 'benmills/vimux'
 
 filetype plugin indent on     " required
 "
