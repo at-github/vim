@@ -175,7 +175,7 @@ filetype plugin indent on     " required
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
     "Generate tags of the first repo upper find"
     "Todo: execute it in a tmux split"
-    map <F6> :!generateTags.sh $(git rev-parse --show-cdup)<CR>
+    map <F6> :!generateTags.sh $(findRepo.sh)<CR>
 
 "Show hidden character, show space as dot and tab as 't.'"
     highlight NonText ctermfg=238
