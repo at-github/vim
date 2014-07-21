@@ -175,8 +175,8 @@ filetype plugin indent on     " required
     "open in tab"
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
     "Generate tags of the first repo upper find"
-    "Todo: execute it in a tmux split"
-    map <F6> :!generateTags.sh $(findRepo.sh)<CR>
+    "Todo: close it when finish
+    map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
 "Show hidden character, show space as dot and tab as 't.'"
     highlight NonText ctermfg=238
