@@ -165,6 +165,7 @@ filetype plugin indent on     " required
     :map <esc>[6;5~ gT
 
 "Tags"
+    "Todo: find dynamically root of repo and source the tag here
     set tags=~/.tags;
     "open in page"
     map <F1> :exec("tag ".expand("<cword>"))<CR>
