@@ -281,6 +281,9 @@ filetype plugin indent on     " required
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
 
 "Other"
+    "Command line
+    set wildmode=longest,list
+    set wildmenu
     "Cursor"
     "Todo: change color in insert mode and maybe in select mode
     set cursorline
