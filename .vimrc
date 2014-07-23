@@ -279,16 +279,23 @@ filetype plugin indent on     " required
         source ~/.vim/.vimrc.bepo
     endif
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
+ 
+"Cursor"
+    " Default Colors for CursorLine
+    highlight  CursorLine ctermbg=black ctermfg=none
+    highlight  CursorColumn ctermbg=black ctermfg=none
+    " Change Color when entering Insert Mode
+    autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
+    " Revert Color to default when leaving Insert Mode
+    autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+    set cursorline
+    set cursorcolumn
+    set cursorbind
 
 "Other"
     "Command line
     set wildmode=longest,list
     set wildmenu
-    "Cursor"
-    "Todo: change color in insert mode and maybe in select mode
-    set cursorline
-    set cursorcolumn
-    set cursorbind
     "Linebreak"
     set wrap linebreak nolist
     "Affiche les numeros de lignes"
