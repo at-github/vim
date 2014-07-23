@@ -291,6 +291,9 @@ filetype plugin indent on     " required
     set cursorline
     set cursorcolumn
     set cursorbind
+    "Todo: make a better contrast with cursor and letter under
+    "Todo: blink cursor only on insert mode
+    "Todo: change shape of cursor in different mode
 
 "Other"
     "Command line
