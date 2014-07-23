@@ -280,6 +280,11 @@ filetype plugin indent on     " required
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
 
 "Other"
+    "Cursor"
+    "Todo: change color in insert mode and maybe in select mode
+    set cursorline
+    set cursorcolumn
+    set cursorbind
     "Linebreak"
     set wrap linebreak nolist
     "Affiche les numeros de lignes"
