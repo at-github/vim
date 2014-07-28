@@ -21,26 +21,16 @@ snippet cgc
 	console.groupCollapsed(${1:groupName});${2}
 snippet cge
 	console.groupEnd();${2}
-# Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
-		${4:// body...}
-	};
-
 # Function
 snippet fun
 	/*
 	 * Brief :
-	 * Param :
+	 * Param : $2
 	 * Return:
 	 */
 	function ${1:function_name}(${2:argument}){
 		${3:// body...}
 	}
-# Anonymous Function
-snippet f
-	function(${1}) {${2}};
 # if
 snippet if
 	if(${1:true}){
@@ -52,6 +42,12 @@ snippet ife
 		${2}
 	}else{
 		${3}
+	}
+snippet else
+	else{
+	}
+snippet elif
+	else if(${1}){
 	}
 # tertiary conditional
 snippet t
