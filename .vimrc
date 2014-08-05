@@ -70,6 +70,7 @@ filetype plugin indent on     " required
     "sw  shiftwidth
     set ts=4 sts=4 sw=4 "settings by default
     if has("autocmd")
+        " Todo: make group auto
         autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
         autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
         autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
@@ -268,6 +269,7 @@ filetype plugin indent on     " required
     " Default Colors for CursorLine
     highlight  CursorLine ctermbg=black ctermfg=none
     highlight  CursorColumn ctermbg=black ctermfg=none
+    " Todo: make auto group
     " Change Color when entering Insert Mode
     autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
     " Revert Color to default when leaving Insert Mode
