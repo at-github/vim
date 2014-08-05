@@ -1,2 +1,4 @@
 "Sauvegarder
 noremap éé :w<enter>
+"Todo: map <C-à> for increment instead <C-a>
+"nmap <C-à> <C-a>
