@@ -279,7 +279,7 @@ filetype plugin indent on     " required
         source ~/.vim/.vimrc.bepo
     endif
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
- 
+
 "Cursor"
     " Default Colors for CursorLine
     highlight  CursorLine ctermbg=black ctermfg=none
@@ -341,3 +341,11 @@ filetype plugin indent on     " required
     imap <esc>OF <end>
 
     map <F5> :e!<CR>
+    " Set no octal increment number but decimal
+    set nrformats=
+
+    " For trainning
+    noremap <Up> <Nop>
+    noremap <Down> <Nop>
+    noremap <Left> <Nop>
+    noremap <Right> <Nop>
