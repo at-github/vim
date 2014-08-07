@@ -132,15 +132,7 @@ filetype plugin indent on     " required
     set completeopt=longest,menuone
 
 "Navigation"
-    "define special key instead change term value
-    map <esc>OH <home>
-    cmap <esc>OH <home>
-    imap <esc>OH <home>
-    map <esc>OF <end>
-    cmap <esc>OF <end>
-    imap <esc>OF <end>
-    map <Home> gg
-    map <End> G
+    "…
 
 "Bubbling text"
     "Note: not perfect when move to the first line"
@@ -331,14 +323,6 @@ filetype plugin indent on     " required
     " if has("autocmd")
     "   autocmd bufwritepost .vimrc source $MYVIMRC
     " endif
-
-    "define special key instead change term value
-    map <esc>OH <home>
-    cmap <esc>OH <home>
-    imap <esc>OH <home>
-    map <esc>OF <end>
-    cmap <esc>OF <end>
-    imap <esc>OF <end>
 
     map <F5> :e!<CR>
     " Set no octal increment number but decimal
