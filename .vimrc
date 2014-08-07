@@ -121,7 +121,7 @@ filetype plugin indent on     " required
     "Auto complete for all langages"
     set omnifunc=syntaxcomplete#Complete
 
-    "Source of completion, to verify"
+    "Source of completion, Todo: to verify"
     set complete=.,b,u,]
 
     "Doesn't select the first completion item, but rather
@@ -178,7 +178,7 @@ filetype plugin indent on     " required
     set foldmethod=marker
     let javaScript_fold=1       "Javascript
     let php_folding=1           "PHP
-    let r_syntax_foldin=1       "R
+    let r_syntax_foldin=1       "R ???
     let sh_fold_enabled=1       "sh
     let vimsyn_folding='af'     "Vim script
     let xml_syntax_folding=1    "XML
@@ -197,7 +197,7 @@ filetype plugin indent on     " required
 
 "CtrlP"
     let g:ctrlp_show_hidden = 1
-    let g:ctrlp_max_files=0
+    let g:ctrlp_max_files = 0
     nnoremap <space>p :CtrlPTag<cr>
 
 "NERDTree
