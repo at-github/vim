@@ -149,6 +149,11 @@ filetype plugin indent on     " required
 "Tab"
     "…
 
+"Path
+    "Todo: find dynamically root of repo and
+    "define the path dynamically and recursively
+    "set path+=repo/**
+
 "Tags"
     "Todo: find dynamically root of repo and source the tag here
     set tags=~/.tags;
