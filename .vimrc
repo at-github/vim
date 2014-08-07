@@ -142,19 +142,11 @@ filetype plugin indent on     " required
     vmap <C-l> xep`[v`]
 
 "Split"
-    "Todo: not working everywhere
     set splitbelow
     set splitright
-    :map <esc>[1;5D <C-Left> <c-w>h
-    :map <esc>[1;5C <C-Right> <c-w>l
-    :map <esc>[1;5A <C-Up> <c-w>k
-    :map <esc>[1;5B <C-Down> <c-w>j
 
 "Tab"
-    "Signal for pageUp"
-    :map <esc>[5;5~ gt
-    "Signal for pageDown"
-    :map <esc>[6;5~ gT
+    "…
 
 "Tags"
     "Todo: find dynamically root of repo and source the tag here
