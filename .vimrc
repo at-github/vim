@@ -1,5 +1,6 @@
 ﻿set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype plugin on
+runtime macros/matchit.vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
