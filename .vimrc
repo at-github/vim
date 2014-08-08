@@ -59,6 +59,7 @@ filetype plugin indent on     " required
 
 "Leader"
     let mapleader=","
+    noremap \ ,
 
 "Indent"
     "Conversion des tabulations en espaces"
