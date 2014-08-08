@@ -326,7 +326,6 @@ filetype plugin indent on     " required
     map <F5> :e!<CR>
     " Set no octal increment number but decimal
     set nrformats=
-
     " For trainning
     noremap <Up> <Nop>
     noremap <Down> <Nop>
