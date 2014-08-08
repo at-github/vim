@@ -111,6 +111,7 @@ filetype plugin indent on     " required
 "Search"
     "Hightlight all result"
     set hlsearch
+    set incsearch
     nmap <leader>p :cprev<cr>
     nmap <leader>P :cfirst<cr>
     nmap <leader>n :cnext<cr>
