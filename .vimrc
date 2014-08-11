@@ -58,16 +58,16 @@ filetype plugin indent on     " required
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-"Leader"
+"Leader
     let mapleader=","
     noremap \ ,
 
-"Indent"
-    "Conversion des tabulations en espaces"
+"Indent
+    "Conversion des tabulations en espaces
     set expandtab
-    "Indentation toutes les n colonnes en fonction du type de fichier"
+    "Indentation toutes les n colonnes en fonction du type de fichier
     "legend:
-    "ts  tabstop"
+    "ts  tabstop
     "sts softtabstop
     "sw  shiftwidth
     set ts=4 sts=4 sw=4 "settings by default
@@ -81,16 +81,16 @@ filetype plugin indent on     " required
         autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
         autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     endif
-    "Indentation intelligents "
+    "Indentation intelligents
     set smartindent
-    " Conserve l'indentation courante sur les nouvelles lignes "
+    " Conserve l'indentation courante sur les nouvelles lignes
     set autoindent
-    "retours arriere intelligents "
+    "retours arriere intelligents
     set backspace=indent,eol,start
-    "Indentation a la marque de Tab la plus proche "
+    "Indentation a la marque de Tab la plus proche
     set shiftround
 
-"Colors"
+"Colors
     " Cannot use togglebg with this option,
     " Use solarized colors in terminal and toggle is ok
     " Or use this option but togglebg will not working properly
@@ -109,8 +109,8 @@ filetype plugin indent on     " required
     syntax enable
     syntax sync fromstart
 
-"Search"
-    "Hightlight all result"
+"Search
+    "Hightlight all result
     set hlsearch
     set incsearch
     nmap <leader>p :cprev<cr>
@@ -118,14 +118,14 @@ filetype plugin indent on     " required
     nmap <leader>n :cnext<cr>
     nmap <leader>N :clast<cr>
 
-"Completion"
-    "To turn on omnicompletion"
+"Completion
+    "To turn on omnicompletion
     filetype plugin on
 
-    "Auto complete for all langages"
+    "Auto complete for all langages
     set omnifunc=syntaxcomplete#Complete
 
-    "Source of completion, Todo: to verify"
+    "Source of completion, Todo: to verify
     set complete=.,b,u,]
 
     "Doesn't select the first completion item, but rather
@@ -135,21 +135,21 @@ filetype plugin indent on     " required
     "latter.)
     set completeopt=longest,menuone
 
-"Navigation"
+"Navigation
     "…
 
-"Bubbling text"
-    "Note: not perfect when move to the first line"
+"Bubbling text
+    "Note: not perfect when move to the first line
     vmap <C-k> xkP`[v`]
     vmap <C-j> xp`[v`]
     vmap <C-h> xbP`[v`]
     vmap <C-l> xep`[v`]
 
-"Split"
+"Split
     set splitbelow
     set splitright
 
-"Tab"
+"Tab
     "…
 
 "Path
@@ -157,22 +157,22 @@ filetype plugin indent on     " required
     "define the path dynamically and recursively
     "set path+=repo/**
 
-"Tags"
+"Tags
     "Todo: find dynamically root of repo and source the tag here
     set tags=~/.tags;
-    "open in page"
+    "open in page
     map <F1> :exec("tag ".expand("<cword>"))<CR>
-    "open in vsplit"
+    "open in vsplit
     map <F2> :vsplit<CR>:exec("tag ".expand("<cword>"))<CR>
-    "open in split"
+    "open in split
     map <F3> :split<CR>:exec("tag ".expand("<cword>"))<CR>
-    "open in tab"
+    "open in tab
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-    "Generate tags of the first repo upper find"
+    "Generate tags of the first repo upper find
     "Todo: close it when finish
     map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
-"Show hidden character, show space as dot and tab as 't.'"
+"Show hidden character, show space as dot and tab as 't.'
     highlight NonText ctermfg=238
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
@@ -182,7 +182,7 @@ filetype plugin indent on     " required
     set listchars+=eol:f
     nmap <c-l> :set list!<CR>
 
-"Folding"
+"Folding
     set foldcolumn=3
     set foldmethod=marker
     let javaScript_fold=1       "Javascript
@@ -195,16 +195,16 @@ filetype plugin indent on     " required
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-"Gvim"
+"Gvim
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove toolbar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
 
-"Indentline"
+"Indentline
     let g:indentLine_color_term = 0
 
-"CtrlP"
+"CtrlP
     let g:ctrlp_show_hidden = 1
     let g:ctrlp_max_files = 0
     nnoremap <space>p :CtrlPTag<cr>
@@ -213,67 +213,67 @@ filetype plugin indent on     " required
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     let g:NERDTreeDirArrows=0
 
-"Sparkup"
+"Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
     "Todo: Find a better settings, aspecially in php files
     let g:sparkupMappingInsertModeOnly = 1
 
-"Syntastic"
+"Syntastic
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
     let g:syntastic_check_on_open=1
     let g:syntastic_check_on_wq=0
 
-"Statline"
+"Statline
     let g:statline_filename_relative = 1
 
-"Fugitive"
+"Fugitive
     let g:statline_fugitive = 1
 
-"NeoComplCache"
-    "Disable AutoComplPop."
+"NeoComplCache
+    "Disable AutoComplPop.
     let g:acp_enableAtStartup = 0
-    "Use neocomplcache."
+    "Use neocomplcache.
     let g:neocomplcache_enable_at_startup = 1
     " Use smartcase.
     let g:neocomplcache_enable_smart_case = 1
     "Set minimum syntax keyword length.
     let g:neocomplcache_min_syntax_length = 3
 
-"Tagbar"
+"Tagbar
     nnoremap <silent> <Leader>t :TagbarToggle<CR>
     let g:tagbar_sort = 0
 
-"Airline"
+"Airline
     set laststatus=2
     let g:airline#extensions#tabline#enabled = 1
 
-"Html5"
+"Html5
     let g:html5_rdfa_attributes_complete = 0
     let g:html5_microdata_attributes_complete = 0
     let g:html5_aria_attributes_complete = 0
 
-"Gundo"
+"Gundo
     map <Leader>z :GundoToggle<CR>
 
-"Snippet"
-"Todo: move this with tabulation"
+"Snippet
+"Todo: move this with tabulation
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
 
-"Specific local config"
+"Specific local config
     if filereadable(glob("~/.vimrc.local"))
         source ~/.vimrc.local
     endif
 
-"Bépo"
+"Bépo
     if !empty(system("setxkbmap -print|grep bepo"))
         source ~/.vim/.vimrc.bepo
     endif
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
 
-"Cursor"
+"Cursor
     " Default Colors for CursorLine
     highlight  CursorLine ctermbg=black ctermfg=none
     highlight  CursorColumn ctermbg=black ctermfg=none
@@ -286,33 +286,33 @@ filetype plugin indent on     " required
     set cursorcolumn
     set cursorbind
 
-"Other"
+"Other
     "Command line
     set wildmode=longest,list
     set wildmenu
-    "Linebreak"
+    "Linebreak
     set wrap linebreak nolist
-    "Affiche les numeros de lignes"
+    "Affiche les numeros de lignes
     set number
-    "Ignore la casse lors de recherche"
+    "Ignore la casse lors de recherche
     set ignorecase
 
     " Si dans le motif il n'y a pas de majuscules,
     " alors la recheche sera en casse insensible
     set smartcase
 
-    "affiche le mode d'edition"
+    "affiche le mode d'edition
     set showmode
-    "affiche la position du curseur"
+    "affiche la position du curseur
     set ruler
-    " affiche les commandes incompletes"
+    " affiche les commandes incompletes
     set showcmd
-    "Si vim ne se souvient pas de la position precedente du curseur"
+    "Si vim ne se souvient pas de la position precedente du curseur
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-    "support de la souris"
+    "support de la souris
     set mouse=a
     set ttymouse=xterm2
-    "80 characters"
+    "80 characters
     highlight ColorColumn ctermbg=235 guibg=#262626
     if exists('&colorcolumn')
         let &colorcolumn=join(range(81,999),",")
@@ -324,7 +324,7 @@ filetype plugin indent on     " required
     set spell
 
     " Source vimrc après l'avoir sauvegarder
-    " Todo: Trouver une solution pour que airline reste correct après rafraichissement"
+    " Todo: Trouver une solution pour que airline reste correct après rafraichissement
     " if has("autocmd")
     "   autocmd bufwritepost .vimrc source $MYVIMRC
     " endif
