@@ -296,8 +296,11 @@ filetype plugin indent on     " required
     set number
     "Ignore la casse lors de recherche"
     set ignorecase
-    "Modifie la casse"
+
+    " Si dans le motif il n'y a pas de majuscules,
+    " alors la recheche sera en casse insensible
     set smartcase
+
     "affiche le mode d'edition"
     set showmode
     "affiche la position du curseur"
