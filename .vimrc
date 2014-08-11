@@ -1,8 +1,8 @@
-﻿set nocompatible              " be iMproved, required
+set nocompatible              " Be iMproved, required
 filetype plugin on
 runtime macros/matchit.vim
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " alternatively, pass a path where Vundle should install bundles
@@ -47,22 +47,21 @@ Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'benmills/vimux'
 
-filetype plugin indent on     " required
-"
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install (update) bundles
 " :BundleSearch(!) foo - search (or refresh cache first) for foo
 " :BundleClean(!)      - confirm (or auto-approve) removal of unused bundles
 "
-" see :h vundle for more details or wiki for FAQ
+" See :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-"Leader
+" Leader
     let mapleader=","
     noremap \ ,
 
-"Indent
+" Indent
     "Conversion des tabulations en espaces
     set expandtab
     "Indentation toutes les n colonnes en fonction du type de fichier
@@ -90,7 +89,7 @@ filetype plugin indent on     " required
     "Indentation a la marque de Tab la plus proche
     set shiftround
 
-"Colors
+" Colors
     " Cannot use togglebg with this option,
     " Use solarized colors in terminal and toggle is ok
     " Or use this option but togglebg will not working properly
@@ -109,7 +108,7 @@ filetype plugin indent on     " required
     syntax enable
     syntax sync fromstart
 
-"Search
+" Search
     "Hightlight all result
     set hlsearch
     set incsearch
@@ -118,7 +117,7 @@ filetype plugin indent on     " required
     nmap <leader>n :cnext<cr>
     nmap <leader>N :clast<cr>
 
-"Completion
+" Completion
     "To turn on omnicompletion
     filetype plugin on
 
@@ -135,29 +134,29 @@ filetype plugin indent on     " required
     "latter.)
     set completeopt=longest,menuone
 
-"Navigation
+" Navigation
     "…
 
-"Bubbling text
+" Bubbling text
     "Note: not perfect when move to the first line
     vmap <C-k> xkP`[v`]
     vmap <C-j> xp`[v`]
     vmap <C-h> xbP`[v`]
     vmap <C-l> xep`[v`]
 
-"Split
+" Split
     set splitbelow
     set splitright
 
-"Tab
+" Tab
     "…
 
-"Path
+" Path
     "Todo: find dynamically root of repo and
     "define the path dynamically and recursively
     "set path+=repo/**
 
-"Tags
+" Tags
     "Todo: find dynamically root of repo and source the tag here
     set tags=~/.tags;
     "open in page
@@ -172,17 +171,16 @@ filetype plugin indent on     " required
     "Todo: close it when finish
     map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
-"Show hidden character, show space as dot and tab as 't.'
+" Show hidden character, show space as dot and tab as 't.'
     highlight NonText ctermfg=238
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
-    " tab not working for now :s
     set listchars=tab:t.
     set listchars+=trail:.
     set listchars+=eol:f
     nmap <c-l> :set list!<CR>
 
-"Folding
+" Folding
     set foldcolumn=3
     set foldmethod=marker
     let javaScript_fold=1       "Javascript
@@ -195,43 +193,43 @@ filetype plugin indent on     " required
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-"Gvim
+" Gvim
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove toolbar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
 
-"Indentline
+" Indentline
     let g:indentLine_color_term = 0
 
-"CtrlP
+" CtrlP
     let g:ctrlp_show_hidden = 1
     let g:ctrlp_max_files = 0
     nnoremap <space>p :CtrlPTag<cr>
 
-"NERDTree
+" NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     let g:NERDTreeDirArrows=0
 
-"Sparkup
+" Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
     "Todo: Find a better settings, aspecially in php files
     let g:sparkupMappingInsertModeOnly = 1
 
-"Syntastic
+" Syntastic
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
     let g:syntastic_check_on_open=1
     let g:syntastic_check_on_wq=0
 
-"Statline
+" Statline
     let g:statline_filename_relative = 1
 
-"Fugitive
+" Fugitive
     let g:statline_fugitive = 1
 
-"NeoComplCache
+" NeoComplCache
     "Disable AutoComplPop.
     let g:acp_enableAtStartup = 0
     "Use neocomplcache.
@@ -241,39 +239,39 @@ filetype plugin indent on     " required
     "Set minimum syntax keyword length.
     let g:neocomplcache_min_syntax_length = 3
 
-"Tagbar
+" Tagbar
     nnoremap <silent> <Leader>t :TagbarToggle<CR>
     let g:tagbar_sort = 0
 
-"Airline
+" Airline
     set laststatus=2
     let g:airline#extensions#tabline#enabled = 1
 
-"Html5
+" Html5
     let g:html5_rdfa_attributes_complete = 0
     let g:html5_microdata_attributes_complete = 0
     let g:html5_aria_attributes_complete = 0
 
-"Gundo
+" Gundo
     map <Leader>z :GundoToggle<CR>
 
-"Snippet
-"Todo: move this with tabulation
+" Snippet
+" Todo: move this with tabulation
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
 
-"Specific local config
+" Specific local config
     if filereadable(glob("~/.vimrc.local"))
         source ~/.vimrc.local
     endif
 
-"Bépo
+" Bépo
     if !empty(system("setxkbmap -print|grep bepo"))
         source ~/.vim/.vimrc.bepo
     endif
     map <F7> :source ~/.vim/.vimrc.bepo<CR>
 
-"Cursor
+" Cursor
     " Default Colors for CursorLine
     highlight  CursorLine ctermbg=black ctermfg=none
     highlight  CursorColumn ctermbg=black ctermfg=none
@@ -286,7 +284,7 @@ filetype plugin indent on     " required
     set cursorcolumn
     set cursorbind
 
-"Other
+" Other
     "Command line
     set wildmode=longest,list
     set wildmenu
@@ -305,7 +303,7 @@ filetype plugin indent on     " required
     set showmode
     "affiche la position du curseur
     set ruler
-    " affiche les commandes incompletes
+    " Affiche les commandes incompletes
     set showcmd
     "Si vim ne se souvient pas de la position precedente du curseur
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
