@@ -5,24 +5,19 @@ runtime macros/matchit.vim
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-" alternatively, pass a path where Vundle should install bundles
-"let path = '~/some/path/here'
-"call vundle#rc(path)
 
-" let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 
-" Keep as documentation
-"" The following are examples of different formats supported.
-"" Keep bundle commands between here and filetype plugin indent on.
-"" scripts on GitHub repos
-"Bundle 'tpope/vim-fugitive'
-"" The sparkup vim script is in a subdirectory of this repo called vim.
-"" Pass the path to set the runtimepath properly.
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" The following are examples of different formats supported.
+" Keep bundle commands between here and filetype plugin indent on.
+" Scripts on GitHub repos
+" Bundle 'tpope/vim-fugitive'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "
-"" scripts not on GitHub
-"Bundle 'git://git.wincent.com/command-t.git'
+" Scripts not on GitHub
+" Bundle 'git://git.wincent.com/command-t.git'
 
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
@@ -39,14 +34,13 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'evanmiller/nginx-vim-syntax'
-Bundle "pangloss/vim-javascript"
-Bundle "terryma/vim-multiple-cursors"
+Bundle 'pangloss/vim-javascript'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'bling/vim-airline'
 Bundle 'kien/tabman.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'benmills/vimux'
-
 
 " Brief help
 " :BundleList          - list configured bundles
