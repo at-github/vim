@@ -56,14 +56,16 @@ Bundle 'benmills/vimux'
     noremap \ ,
 
 " Indent
-    "Conversion des tabulations en espaces
+    " Conversion des tabulations en espaces
     set expandtab
-    "Indentation toutes les n colonnes en fonction du type de fichier
-    "legend:
-    "ts  tabstop
-    "sts softtabstop
-    "sw  shiftwidth
-    set ts=4 sts=4 sw=4 "settings by default
+    " Indentation toutes les n colonnes en fonction du type de fichier
+    " Legend:
+    " ts  tabstop
+    " sts softtabstop
+    " sw  shiftwidth
+
+    " Settings by default
+    set ts=4 sts=4 sw=4
     if has("autocmd")
         " Todo: make group auto
         autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
@@ -74,21 +76,16 @@ Bundle 'benmills/vimux'
         autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
         autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     endif
-    "Indentation intelligents
+    " Indentation intelligente
     set smartindent
     " Conserve l'indentation courante sur les nouvelles lignes
     set autoindent
-    "retours arriere intelligents
+    " Retours arrière intelligents
     set backspace=indent,eol,start
-    "Indentation a la marque de Tab la plus proche
+    " Indentation à la marque de Tab la plus proche
     set shiftround
 
 " Colors
-    " Cannot use togglebg with this option,
-    " Use solarized colors in terminal and toggle is ok
-    " Or use this option but togglebg will not working properly
-    " let g:solarized_termcolors=256
-
     colorscheme solarized
 
     if has('gui_running')
@@ -96,6 +93,7 @@ Bundle 'benmills/vimux'
     else
         set background=dark
     endif
+
     call togglebg#map("<c-b>")
 
     highlight LineNr ctermfg=grey ctermbg=black
@@ -103,8 +101,9 @@ Bundle 'benmills/vimux'
     syntax sync fromstart
 
 " Search
-    "Hightlight all result
+    " Highlight all results
     set hlsearch
+    " Preview the search results
     set incsearch
     nmap <leader>p :cprev<cr>
     nmap <leader>P :cfirst<cr>
@@ -112,27 +111,24 @@ Bundle 'benmills/vimux'
     nmap <leader>N :clast<cr>
 
 " Completion
-    "To turn on omnicompletion
-    filetype plugin on
-
-    "Auto complete for all langages
+    " Auto complete for all langages
     set omnifunc=syntaxcomplete#Complete
 
-    "Source of completion, Todo: to verify
+    " Source of completion, Todo: to verify
     set complete=.,b,u,]
 
-    "Doesn't select the first completion item, but rather
-    "just inserts the longest common text of all matches; and the menu will
-    "come up even if there's only one match. (The longest setting is
-    "responsible for the former effect and the menuone is responsible for the
-    "latter.)
+    " Doesn't select the first completion item, but rather
+    " just inserts the longest common text of all matches; and the menu will
+    " come up even if there's only one match. (The longest setting is
+    " responsible for the former effect and the menuone is responsible for the
+    " latter.)
     set completeopt=longest,menuone
 
 " Navigation
     "…
 
 " Bubbling text
-    "Note: not perfect when move to the first line
+    " Note: not perfect when move to the first line
     vmap <C-k> xkP`[v`]
     vmap <C-j> xp`[v`]
     vmap <C-h> xbP`[v`]
@@ -146,23 +142,23 @@ Bundle 'benmills/vimux'
     "…
 
 " Path
-    "Todo: find dynamically root of repo and
-    "define the path dynamically and recursively
-    "set path+=repo/**
+    " Todo: find dynamically root of repo and
+    " define the path dynamically and recursively
+    " set path+=repo/**
 
 " Tags
-    "Todo: find dynamically root of repo and source the tag here
+    " Todo: find dynamically root of repo and source the tag here
     set tags=~/.tags;
-    "open in page
+    " Open in page
     map <F1> :exec("tag ".expand("<cword>"))<CR>
-    "open in vsplit
+    " Open in vsplit
     map <F2> :vsplit<CR>:exec("tag ".expand("<cword>"))<CR>
-    "open in split
+    " Open in split
     map <F3> :split<CR>:exec("tag ".expand("<cword>"))<CR>
-    "open in tab
+    " Open in tab
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-    "Generate tags of the first repo upper find
-    "Todo: close it when finish
+    " Generate tags of the first repo upper find
+    " Todo: close it when finish
     map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
 " Show hidden character, show space as dot and tab as 't.'
@@ -177,9 +173,9 @@ Bundle 'benmills/vimux'
 " Folding
     set foldcolumn=3
     set foldmethod=marker
-    let javaScript_fold=1       "Javascript
+    let javaScript_fold=1       "JavaScript
     let php_folding=1           "PHP
-    let r_syntax_foldin=1       "R ???
+    let r_syntax_foldin=1       "R Todo: what's this R? Ruby???
     let sh_fold_enabled=1       "sh
     let vimsyn_folding='af'     "Vim script
     let xml_syntax_folding=1    "XML
@@ -189,7 +185,7 @@ Bundle 'benmills/vimux'
 
 " Gvim
     :set guioptions-=m  "remove menu bar
-    :set guioptions-=T  "remove toolbar
+    :set guioptions-=T  "remove tool bar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
 
@@ -207,7 +203,7 @@ Bundle 'benmills/vimux'
 
 " Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
-    "Todo: Find a better settings, aspecially in php files
+    " Todo: Find a better settings, especially in php files
     let g:sparkupMappingInsertModeOnly = 1
 
 " Syntastic
@@ -224,13 +220,13 @@ Bundle 'benmills/vimux'
     let g:statline_fugitive = 1
 
 " NeoComplCache
-    "Disable AutoComplPop.
+    " Disable AutoComplPop.
     let g:acp_enableAtStartup = 0
-    "Use neocomplcache.
+    " Use neocomplcache.
     let g:neocomplcache_enable_at_startup = 1
     " Use smartcase.
     let g:neocomplcache_enable_smart_case = 1
-    "Set minimum syntax keyword length.
+    " Set minimum syntax keyword length.
     let g:neocomplcache_min_syntax_length = 3
 
 " Tagbar
@@ -250,7 +246,7 @@ Bundle 'benmills/vimux'
     map <Leader>z :GundoToggle<CR>
 
 " Snippet
-" Todo: move this with tabulation
+    " Todo: move this with tabulation
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
 
@@ -279,31 +275,33 @@ Bundle 'benmills/vimux'
     set cursorbind
 
 " Other
-    "Command line
+    " Command line
     set wildmode=longest,list
     set wildmenu
-    "Linebreak
+    " Line break
     set wrap linebreak nolist
-    "Affiche les numeros de lignes
+    " Affiche les numéros de lignes
     set number
-    "Ignore la casse lors de recherche
+    " Ignore la casse lors de recherche
     set ignorecase
 
     " Si dans le motif il n'y a pas de majuscules,
-    " alors la recheche sera en casse insensible
+    " alors la recherche sera en casse insensible
     set smartcase
 
-    "affiche le mode d'edition
+    " Affiche le mode d'édition
     set showmode
-    "affiche la position du curseur
+    " Affiche la position du curseur
     set ruler
-    " Affiche les commandes incompletes
+    " Affiche les commandes incomplètes
     set showcmd
-    "Si vim ne se souvient pas de la position precedente du curseur
+    " Si vim ne se souvient pas de la position précédente du curseur
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-    "support de la souris
+
+    " Support de la souris
     set mouse=a
     set ttymouse=xterm2
+
     "80 characters
     highlight ColorColumn ctermbg=235 guibg=#262626
     if exists('&colorcolumn')
@@ -322,9 +320,11 @@ Bundle 'benmills/vimux'
     " endif
 
     map <F5> :e!<CR>
+
     " Set no octal increment number but decimal
     set nrformats=
-    " For trainning
+
+    " For training
     noremap <Up> <Nop>
     noremap <Down> <Nop>
     noremap <Left> <Nop>
