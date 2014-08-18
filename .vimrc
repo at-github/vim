@@ -282,6 +282,7 @@ Bundle 'benmills/vimux'
     set wrap linebreak nolist
     " Affiche les numéros de lignes
     set number
+
     " Ignore la casse lors de recherche
     set ignorecase
 
@@ -302,7 +303,7 @@ Bundle 'benmills/vimux'
     set mouse=a
     set ttymouse=xterm2
 
-    "80 characters
+    " 80 characters
     highlight ColorColumn ctermbg=235 guibg=#262626
     if exists('&colorcolumn')
         let &colorcolumn=join(range(81,999),",")
