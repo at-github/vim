@@ -148,7 +148,7 @@ Bundle 'Yggdroot/indentLine'
 
 " Tags
     " Todo: find dynamically root of repo and source the tag here
-    set tags=~/.tags;
+    set tags=./.tags,.tags;
     " Open in page
     map <F1> :exec("tag ".expand("<cword>"))<CR>
     " Open in vsplit
