@@ -24,7 +24,6 @@ Bundle 'benmills/vimux'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'bling/vim-airline'
 Bundle 'evanmiller/nginx-vim-syntax'
-Bundle 'godlygeek/tabular'
 Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
@@ -34,8 +33,6 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'sjl/gundo.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
@@ -219,16 +216,6 @@ Bundle 'Yggdroot/indentLine'
 " Fugitive
     let g:statline_fugitive = 1
 
-" NeoComplCache
-    " Disable AutoComplPop.
-    let g:acp_enableAtStartup = 0
-    " Use neocomplcache.
-    let g:neocomplcache_enable_at_startup = 1
-    " Use smartcase.
-    let g:neocomplcache_enable_smart_case = 1
-    " Set minimum syntax keyword length.
-    let g:neocomplcache_min_syntax_length = 3
-
 " Tagbar
     nnoremap <silent> <Leader>t :TagbarToggle<CR>
     let g:tagbar_sort = 0
@@ -241,9 +228,6 @@ Bundle 'Yggdroot/indentLine'
     let g:html5_rdfa_attributes_complete = 0
     let g:html5_microdata_attributes_complete = 0
     let g:html5_aria_attributes_complete = 0
-
-" Gundo
-    map <Leader>z :GundoToggle<CR>
 
 " Snippet
     " Todo: move this with tabulation
