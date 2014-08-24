@@ -293,7 +293,7 @@ Bundle 'Yggdroot/indentLine'
 
     " Lang and corrector
     set spelllang=en,fr
-    set spell
+    map <Leader>z :set spell!<CR>
 
     " Source vimrc après l'avoir sauvegarder
     " Todo: Trouver une solution pour que airline reste correct après rafraichissement
