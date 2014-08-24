@@ -240,10 +240,7 @@ Bundle 'Yggdroot/indentLine'
     endif
 
 " Bépo
-    if !empty(system("setxkbmap -print|grep bepo"))
-        source ~/.vim/.vimrc.bepo
-    endif
-    map <F7> :source ~/.vim/.vimrc.bepo<CR>
+    source ~/.vim/.vimrc.bepo
 
 " Cursor
     " Default Colors for CursorLine
