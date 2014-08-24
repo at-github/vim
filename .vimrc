@@ -1,5 +1,5 @@
 set nocompatible              " Be iMproved, required
-filetype plugin on
+filetype plugin indent on
 runtime macros/matchit.vim
 
 " Set the runtime path to include Vundle and initialize
