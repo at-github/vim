@@ -311,4 +311,3 @@ Bundle 'Yggdroot/indentLine'
     noremap <Down> <Nop>
     noremap <Left> <Nop>
     noremap <Right> <Nop>
-    set nrformats=
