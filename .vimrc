@@ -253,7 +253,6 @@ Bundle 'Yggdroot/indentLine'
     autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
     set cursorline
     set cursorcolumn
-    set cursorbind
 
 " Other
     " Command line
