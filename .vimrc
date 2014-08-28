@@ -179,7 +179,6 @@ Bundle 'Yggdroot/indentLine'
     let javaScript_fold=1       "JavaScript
     " For now disable folding on php because vim is very slow on large file
     " let php_folding=1           "PHP
-    let r_syntax_foldin=1       "R Todo: what's this R? Ruby???
     let sh_fold_enabled=1       "sh
     let vimsyn_folding='af'     "Vim script
     let xml_syntax_folding=1    "XML
