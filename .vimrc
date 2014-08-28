@@ -93,7 +93,10 @@ Bundle 'Yggdroot/indentLine'
 
     call togglebg#map("<c-b>")
 
+    " Colors of numbers
     highlight LineNr ctermfg=grey ctermbg=black
+
+    " Synchronization of syntax
     syntax enable
     syntax sync fromstart
 
@@ -144,7 +147,8 @@ Bundle 'Yggdroot/indentLine'
     " set path+=repo/**
 
 " Tags
-    " Todo: find dynamically root of repo and source the tag here
+    " Todo: find dynamically root of repo and source the tag here maybe
+    " unnecessary
     set tags=./.tags,.tags;
     " Open in page
     " be sure F1 not opening help, and back to normal mode
