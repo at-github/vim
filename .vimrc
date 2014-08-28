@@ -262,7 +262,7 @@ Bundle 'Yggdroot/indentLine'
 
 " Other
     " Command line
-    set wildmode=longest,list
+    set wildmode=longest:full,list:full
     set wildmenu
     " Line break
     set wrap linebreak nolist
