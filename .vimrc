@@ -210,6 +210,7 @@ Bundle 'Yggdroot/indentLine'
     vmap <Space> zf<enter>
 
 " Gvim
+    :set guifont=Monaco:h14
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove tool bar
     :set guioptions-=r  "remove right-hand scroll bar
