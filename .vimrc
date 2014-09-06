@@ -49,15 +49,17 @@ Bundle 'Yggdroot/indentLine'
 " NOTE: comments after Bundle commands are not allowed.
 
 " Functions
-:function SetColorsDark()
-    " Cursor
-    highlight  CursorLine ctermbg=black ctermfg=none
-    highlight  CursorColumn ctermbg=black ctermfg=none
-    " Todo: make auto group
-    " Change Color when entering Insert Mode
-    autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
-    " Revert Color to default when leaving Insert Mode
-    autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+:function SetColorsAccordingBg(backg)
+:   if (a:backg == 'dark')
+    :   " Cursor
+    :   highlight CursorLine ctermbg=black ctermfg=none
+    :   highlight CursorColumn ctermbg=black ctermfg=none
+    :   " Todo: make auto group
+    :   " Change Color when entering Insert Mode
+    :   autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
+    :   " Revert Color to default when leaving Insert Mode
+    :   autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+:   endif
 :endfunction
 
 " Leader
@@ -263,7 +265,7 @@ Bundle 'Yggdroot/indentLine'
 " Cursor
     " Default Colors for CursorLine
     if (&background == 'dark')
-        :call SetColorsDark()
+        :call SetColorsAccordingBg('dark')
     endif
 
     set cursorline
