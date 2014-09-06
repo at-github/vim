@@ -299,7 +299,6 @@ Bundle 'Yggdroot/indentLine'
     set ttymouse=xterm2
 
     " 80 characters
-    highlight ColorColumn ctermbg=235 guibg=#262626
     if exists('&colorcolumn')
         let &colorcolumn=join(range(81,999),",")
         let &colorcolumn="80,".join(range(120,999),",")
