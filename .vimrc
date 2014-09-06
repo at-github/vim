@@ -48,6 +48,18 @@ Bundle 'Yggdroot/indentLine'
 " See :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
+" Functions
+:function SetColorsDark()
+    " Cursor
+    highlight  CursorLine ctermbg=black ctermfg=none
+    highlight  CursorColumn ctermbg=black ctermfg=none
+    " Todo: make auto group
+    " Change Color when entering Insert Mode
+    autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
+    " Revert Color to default when leaving Insert Mode
+    autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+:endfunction
+
 " Leader
     let mapleader=","
     noremap \ ,
@@ -250,13 +262,10 @@ Bundle 'Yggdroot/indentLine'
 
 " Cursor
     " Default Colors for CursorLine
-    highlight  CursorLine ctermbg=black ctermfg=none
-    highlight  CursorColumn ctermbg=black ctermfg=none
-    " Todo: make auto group
-    " Change Color when entering Insert Mode
-    autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
-    " Revert Color to default when leaving Insert Mode
-    autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+    if (&background == 'dark')
+        :call SetColorsDark()
+    endif
+
     set cursorline
     set cursorcolumn
 
