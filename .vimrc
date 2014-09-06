@@ -59,6 +59,15 @@ Bundle 'Yggdroot/indentLine'
     :   autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
     :   " Revert Color to default when leaving Insert Mode
     :   autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
+:   elseif (a:backg == 'light')
+    :   " Cursor
+    :   highlight CursorLine ctermbg=lightgray ctermfg=none
+    :   highlight CursorColumn ctermbg=lightgray ctermfg=none
+    :   " Todo: make auto group
+    :   " Change Color when entering Insert Mode
+    :   autocmd InsertEnter * highlight CursorLine ctermbg=white ctermfg=darkgray
+    :   " Revert Color to default when leaving Insert Mode
+    :   autocmd InsertLeave * highlight CursorLine ctermbg=lightgray ctermfg=none
 :   endif
 :endfunction
 
@@ -266,6 +275,8 @@ Bundle 'Yggdroot/indentLine'
     " Default Colors for CursorLine
     if (&background == 'dark')
         :call SetColorsAccordingBg('dark')
+    elseif (&background == 'light')
+        :call SetColorsAccordingBg('light')
     endif
 
     set cursorline
