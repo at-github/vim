@@ -38,6 +38,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/tComment'
 Bundle 'Yggdroot/indentLine'
+Bundle 'tommcdo/vim-exchange'
 
 " Brief help
 " :BundleList          - list configured bundles
