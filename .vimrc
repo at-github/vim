@@ -291,6 +291,8 @@ Bundle 'tommcdo/vim-exchange'
     " Line break
     set wrap linebreak nolist
     " Affiche les numéros de lignes
+    hi CursorLineNR cterm=bold ctermfg=black ctermbg=darkgray
+    set relativenumber
     set number
 
     " Ignore la casse lors de recherche
