@@ -39,6 +39,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/tComment'
 Bundle 'Yggdroot/indentLine'
 Bundle 'tommcdo/vim-exchange'
+Bundle 'airblade/vim-gitgutter'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -283,6 +284,16 @@ Bundle 'tommcdo/vim-exchange'
 
     set cursorline
     set cursorcolumn
+
+" Airblade
+    highlight clear SignColumn
+    let g:gitgutter_sign_added = '+'
+    let g:gitgutter_sign_modified = '~'
+    let g:gitgutter_sign_removed = '-'
+    let g:gitgutter_sign_removed_first_line = '^-'
+
+    " Highlight line modified
+    let g:gitgutter_highlight_lines = 1
 
 " Other
     " Command line
