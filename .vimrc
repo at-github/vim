@@ -293,7 +293,7 @@ Bundle 'airblade/vim-gitgutter'
     let g:gitgutter_sign_removed_first_line = '^-'
 
     " Highlight line modified
-    let g:gitgutter_highlight_lines = 1
+    map <leader>l :GitGutterLineHighlightsToggle<CR>
 
 " Other
     " Command line
