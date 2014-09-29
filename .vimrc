@@ -40,6 +40,7 @@ Bundle 'vim-scripts/tComment'
 Bundle 'Yggdroot/indentLine'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'spf13/PIV'
 
 " Brief help
 " :BundleList          - list configured bundles
