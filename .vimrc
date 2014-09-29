@@ -41,6 +41,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'spf13/PIV'
+Bundle 'Shougo/neocomplcache'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -295,6 +296,20 @@ Bundle 'spf13/PIV'
 
     " Highlight line modified
     map <leader>l :GitGutterLineHighlightsToggle<CR>
+
+" neocomplcache
+    " Disable AutoComplPop
+    let g:acp_enableAtStartup = 0
+
+    " Use neocomplcache
+    let g:neocomplcache_enable_at_startup = 1
+
+    " Use smartcase
+    let g:neocomplcache_enable_smart_case = 1
+
+    " Set minimum syntax keyword length
+    let g:neocomplcache_min_syncax_length = 3
+    let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 " Other
     " Command line
