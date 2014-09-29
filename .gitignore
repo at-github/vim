@@ -4,3 +4,4 @@ todo
 .netrwhist
 bundle/
 .tags
+.vimrc.local
