@@ -42,6 +42,7 @@ Bundle 'tommcdo/vim-exchange'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'spf13/PIV'
 Bundle 'Shougo/neocomplcache'
+Bundle 'Lokaltog/vim-easymotion'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -310,6 +311,11 @@ Bundle 'Shougo/neocomplcache'
     " Set minimum syntax keyword length
     let g:neocomplcache_min_syncax_length = 3
     let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+" EasyMotion
+    let g:EasyMotion_smartcase = 1
+    map  <Leader>/ <Plug>(easymotion-sn)
+    omap <Leader>/ <Plug>(easymotion-tn)
 
 " Other
     " Command line
