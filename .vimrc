@@ -43,6 +43,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'spf13/PIV'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Townk/vim-autoclose'
 
 " Brief help
 " :BundleList          - list configured bundles
