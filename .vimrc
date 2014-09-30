@@ -317,6 +317,9 @@ Bundle 'Lokaltog/vim-easymotion'
     map  <Leader>/ <Plug>(easymotion-sn)
     omap <Leader>/ <Plug>(easymotion-tn)
 
+" AutoCloseTag
+    au FileType xhtml, xml ~/.vim/ftplugin/html_autoclosetag.vim
+
 " Other
     " Command line
     set wildmode=longest:full,list:full
