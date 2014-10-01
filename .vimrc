@@ -55,27 +55,6 @@ Bundle 'Townk/vim-autoclose'
 " NOTE: comments after Bundle commands are not allowed.
 
 " Functions
-:function SetColorsAccordingBg(backg)
-:   if (a:backg == 'dark')
-    :   " Cursor
-    :   highlight CursorLine ctermbg=black ctermfg=none
-    :   highlight CursorColumn ctermbg=black ctermfg=none
-    :   " Todo: make auto group
-    :   " Change Color when entering Insert Mode
-    :   autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
-    :   " Revert Color to default when leaving Insert Mode
-    :   autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
-:   elseif (a:backg == 'light')
-    :   " Cursor
-    :   highlight CursorLine ctermbg=lightgray ctermfg=none
-    :   highlight CursorColumn ctermbg=lightgray ctermfg=none
-    :   " Todo: make auto group
-    :   " Change Color when entering Insert Mode
-    :   autocmd InsertEnter * highlight CursorLine ctermbg=white ctermfg=darkgray
-    :   " Revert Color to default when leaving Insert Mode
-    :   autocmd InsertLeave * highlight CursorLine ctermbg=lightgray ctermfg=none
-:   endif
-:endfunction
 
 " Leader
     let mapleader=","
@@ -273,13 +252,6 @@ Bundle 'Townk/vim-autoclose'
     source ~/.vim/.vimrc.bepo
 
 " Cursor
-    " Default Colors for CursorLine
-    if (&background == 'dark')
-        :call SetColorsAccordingBg('dark')
-    elseif (&background == 'light')
-        :call SetColorsAccordingBg('light')
-    endif
-
     set cursorline
     set cursorcolumn
 
