@@ -19,7 +19,7 @@ Bundle 'gmarik/vundle'
 " Scripts not on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
 
-Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'tomasr/molokai'
 Bundle 'benmills/vimux'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'bling/vim-airline'
@@ -112,15 +112,9 @@ Bundle 'Townk/vim-autoclose'
     set shiftround
 
 " Colors
-    colorscheme solarized
-
-    if has('gui_running')
-        set background=light
-    else
-        set background=dark
-    endif
-
-    call togglebg#map("<c-b>")
+    colorscheme molokai
+    let g:molokai_original = 1
+    let g:rehash256 = 1
 
     " Colors of numbers
     highlight LineNr ctermfg=grey ctermbg=black
