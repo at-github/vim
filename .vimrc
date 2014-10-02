@@ -196,7 +196,7 @@ Bundle 'Townk/vim-autoclose'
     :set guioptions-=L  "remove left-hand scroll bar
 
 " Indentline
-    let g:indentLine_color_term = 0
+    let g:indentLine_color_term = 59
 
 " CtrlP
     let g:ctrlp_show_hidden = 1
