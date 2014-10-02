@@ -294,7 +294,7 @@ Bundle 'Townk/vim-autoclose'
     " Line break
     set wrap linebreak nolist
     " Affiche les numéros de lignes
-    hi CursorLineNR cterm=bold ctermfg=black ctermbg=darkgray
+    hi CursorLineNR cterm=bold ctermfg=black ctermbg=yellow
     set relativenumber
     set number
 
