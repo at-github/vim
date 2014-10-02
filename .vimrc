@@ -96,11 +96,14 @@ Bundle 'Townk/vim-autoclose'
     let g:rehash256 = 1
 
     " Colors of numbers
-    highlight LineNr ctermfg=grey ctermbg=black
+    highlight LineNr cterm=bold ctermfg=grey ctermbg=black
 
     " Synchronization of syntax
     syntax enable
     syntax sync fromstart
+
+    " Colors of signs and fold column
+    highlight foldcolumn ctermbg=236 ctermfg=darkgrey
 
 " Search
     " Highlight all results
