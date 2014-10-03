@@ -105,6 +105,14 @@ Bundle 'Townk/vim-autoclose'
     " Colors of signs and fold column
     highlight foldcolumn ctermbg=236 ctermfg=darkgrey
 
+    " Colors of tab
+    " General colors tab
+    highlight TabLine ctermbg=darkgrey ctermfg=grey
+    " Active tab
+    highlight TabLineSel cterm=bold ctermbg=yellow ctermfg=black
+    " Tab bar
+    highlight TabLineFill ctermfg=black
+
 " Search
     " Highlight all results
     set hlsearch
@@ -142,9 +150,6 @@ Bundle 'Townk/vim-autoclose'
 " Split
     set splitbelow
     set splitright
-
-" Tab
-    "…
 
 " Path
     " Todo: find dynamically root of repo and
