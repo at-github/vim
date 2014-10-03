@@ -257,8 +257,8 @@ Bundle 'Townk/vim-autoclose'
     let g:tagbar_sort = 0
 
 " Airline
+    " Always show statusline
     set laststatus=2
-    let g:airline#extensions#tabline#enabled = 1
 
 " Html5
     let g:html5_rdfa_attributes_complete = 0
