@@ -113,7 +113,7 @@ Bundle 'vim-scripts/ShowMarks'
     highlight TabLineFill ctermfg=black
 
     " Marks colors
-    highlight ShowMarksHLo ctermbg=black ctermfg=darkgrey
+    highlight ShowMarksHLla ctermbg=236 ctermfg=darkgrey
 
 " Search
     " Highlight all results
