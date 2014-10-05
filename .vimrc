@@ -216,6 +216,7 @@ Bundle 'vim-scripts/ShowMarks'
 " NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     let g:NERDTreeDirArrows=0
+    highlight Directory cterm=bold ctermfg=darkgrey
 
 " Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
