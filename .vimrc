@@ -42,6 +42,7 @@ Bundle 'spf13/PIV'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Townk/vim-autoclose'
+Bundle 'vim-scripts/ShowMarks'
 
 " Brief help
 " :BundleList          - list configured bundles
