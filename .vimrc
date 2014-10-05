@@ -112,6 +112,9 @@ Bundle 'vim-scripts/ShowMarks'
     " Tab bar
     highlight TabLineFill ctermfg=black
 
+    " Marks colors
+    highlight ShowMarksHLo ctermbg=black ctermfg=darkgrey
+
 " Search
     " Highlight all results
     set hlsearch
