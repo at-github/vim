@@ -295,6 +295,12 @@ Bundle 'vim-scripts/ShowMarks'
 " AutoCloseTag
     au FileType xhtml, xml ~/.vim/ftplugin/html_autoclosetag.vim
 
+" ShowMarks
+    " Disable by default
+    let showmarks_enable = 0
+    " Include only my markers
+    let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+
 " Other
     " Command line
     set wildmode=longest:full,list:full
