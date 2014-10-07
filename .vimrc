@@ -383,3 +383,6 @@ Bundle 'vim-scripts/ShowMarks'
     noremap <Down> <Nop>
     noremap <Left> <Nop>
     noremap <Right> <Nop>
+
+    "Toggle NerdTree relative and tagbar
+    noremap <Leader><Space> :NERDTreeToggle % <Bar> TagbarToggle<CR>
