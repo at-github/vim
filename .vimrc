@@ -19,7 +19,7 @@ Bundle 'gmarik/vundle'
 " Scripts not on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
 
-Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'tomasr/molokai'
 Bundle 'benmills/vimux'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'bling/vim-airline'
@@ -54,27 +54,6 @@ Bundle 'vim-scripts/ShowMarks'
 " NOTE: comments after Bundle commands are not allowed.
 
 " Functions
-:function SetColorsAccordingBg(backg)
-:   if (a:backg == 'dark')
-    :   " Cursor
-    :   highlight CursorLine ctermbg=black ctermfg=none
-    :   highlight CursorColumn ctermbg=black ctermfg=none
-    :   " Todo: make auto group
-    :   " Change Color when entering Insert Mode
-    :   autocmd InsertEnter * highlight  CursorLine ctermbg=234 ctermfg=none
-    :   " Revert Color to default when leaving Insert Mode
-    :   autocmd InsertLeave * highlight  CursorLine ctermbg=black ctermfg=none
-:   elseif (a:backg == 'light')
-    :   " Cursor
-    :   highlight CursorLine ctermbg=lightgray ctermfg=none
-    :   highlight CursorColumn ctermbg=lightgray ctermfg=none
-    :   " Todo: make auto group
-    :   " Change Color when entering Insert Mode
-    :   autocmd InsertEnter * highlight CursorLine ctermbg=white ctermfg=darkgray
-    :   " Revert Color to default when leaving Insert Mode
-    :   autocmd InsertLeave * highlight CursorLine ctermbg=lightgray ctermfg=none
-:   endif
-:endfunction
 
 " Leader
     let mapleader=","
@@ -111,22 +90,30 @@ Bundle 'vim-scripts/ShowMarks'
     set shiftround
 
 " Colors
-    colorscheme solarized
-
-    if has('gui_running')
-        set background=light
-    else
-        set background=dark
-    endif
-
-    call togglebg#map("<c-b>")
+    colorscheme molokai
+    let g:molokai_original = 1
+    let g:rehash256 = 1
 
     " Colors of numbers
-    highlight LineNr ctermfg=grey ctermbg=black
+    highlight LineNr cterm=bold ctermfg=grey ctermbg=black
 
     " Synchronization of syntax
     syntax enable
     syntax sync fromstart
+
+    " Colors of signs and fold column
+    highlight foldcolumn ctermbg=236 ctermfg=darkgrey
+
+    " Colors of tab
+    " General colors tab
+    highlight TabLine ctermbg=darkgrey ctermfg=grey
+    " Active tab
+    highlight TabLineSel cterm=bold ctermbg=yellow ctermfg=black
+    " Tab bar
+    highlight TabLineFill ctermfg=black
+
+    " Marks colors
+    highlight ShowMarksHLla ctermbg=236 ctermfg=darkgrey
 
 " Search
     " Highlight all results
@@ -165,9 +152,6 @@ Bundle 'vim-scripts/ShowMarks'
 " Split
     set splitbelow
     set splitright
-
-" Tab
-    "…
 
 " Path
     " Todo: find dynamically root of repo and
@@ -222,7 +206,7 @@ Bundle 'vim-scripts/ShowMarks'
     :set guioptions-=L  "remove left-hand scroll bar
 
 " Indentline
-    let g:indentLine_color_term = 0
+    let g:indentLine_color_term = 59
 
 " CtrlP
     let g:ctrlp_show_hidden = 1
@@ -232,6 +216,7 @@ Bundle 'vim-scripts/ShowMarks'
 " NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     let g:NERDTreeDirArrows=0
+    highlight Directory cterm=bold ctermfg=darkgrey
 
 " Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
@@ -258,6 +243,7 @@ Bundle 'vim-scripts/ShowMarks'
 " Airline
     " Always show statusline
     set laststatus=2
+    let g:airline_theme='simple'
 
 " Html5
     let g:html5_rdfa_attributes_complete = 0
@@ -278,13 +264,6 @@ Bundle 'vim-scripts/ShowMarks'
     source ~/.vim/.vimrc.bepo
 
 " Cursor
-    " Default Colors for CursorLine
-    if (&background == 'dark')
-        :call SetColorsAccordingBg('dark')
-    elseif (&background == 'light')
-        :call SetColorsAccordingBg('light')
-    endif
-
     set cursorline
     set cursorcolumn
 
@@ -324,7 +303,7 @@ Bundle 'vim-scripts/ShowMarks'
     " Disable by default
     let showmarks_enable = 0
     " Include only my markers
-    let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+    let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 " Other
     " Command line
@@ -333,7 +312,7 @@ Bundle 'vim-scripts/ShowMarks'
     " Line break
     set wrap linebreak nolist
     " Affiche les numéros de lignes
-    hi CursorLineNR cterm=bold ctermfg=black ctermbg=darkgray
+    hi CursorLineNR cterm=bold ctermfg=black ctermbg=yellow
     set relativenumber
     set number
 
