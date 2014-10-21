@@ -43,6 +43,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Townk/vim-autoclose'
 Bundle 'vim-scripts/ShowMarks'
+Bundle 'vim-ruby/vim-ruby'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -78,6 +79,7 @@ Bundle 'vim-scripts/ShowMarks'
         autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
         autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
         autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
+        autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
         autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
     endif
     " Indentation intelligente
