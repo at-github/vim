@@ -44,14 +44,20 @@ snippet /*
 	/**
 	 * ${1}
 	 */
+snippet /**
+	/**
+	 * @brief : ${1}
+	 * @param : ${2}
+	 * @return: ${3}
+	 */
 # Class - post doc
 snippet doc_cp
 	/**
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3:`g:snips_author`}
-	 */${4}
+	 * @author Tarik
+	 */${3}
 # Class Variable - post doc
 snippet doc_vp
 	/**
@@ -73,10 +79,10 @@ snippet doc_c
 	 * ${3:undocumented class}
 	 *
 	 * @packaged ${4:default}
-	 * @author ${5:`g:snips_author`}
+	 * @author Tarik
 	 */
 	${1:}class ${2:}
-	{${6}
+	{${5}
 	} // END $1class $2
 # Constant Definition - post doc
 snippet doc_dp
@@ -95,34 +101,34 @@ snippet doc_fp
 	 * ${1:undocumented function}
 	 *
 	 * @return ${2:void}
-	 * @author ${3:`g:snips_author`}
-	 */${4}
+	 * @author Tarik
+	 */${3}
 # Function signature
 snippet doc_s
 	/**
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
-	 * @author ${6:`g:snips_author`}
+	 * @author Tarik
 	 */
-	${1}function ${2}(${3});${7}
+	${1}function ${2}(${3});${6}
 # Function
 snippet doc_f
 	/**
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
-	 * @author ${6:`g:snips_author`}
+	 * @author Tarik
 	 */
 	${1}function ${2}(${3})
-	{${7}
+	{${6}
 	}
 # Header
 snippet doc_h
 	/**
 	 * ${1}
 	 *
-	 * @author ${2:`g:snips_author`}
+	 * @author Tarik
 	 * @version ${3:$Id$}
 	 * @copyright ${4:$2}, `strftime('%d %B, %Y')`
 	 * @package ${5:default}
@@ -137,9 +143,9 @@ snippet doc_i
 	 * ${2:undocumented class}
 	 *
 	 * @package ${3:default}
-	 * @author ${4:`g:snips_author`}
+	 * @author Tarik
 	 */
-	interface ${1:}{${5}
+	interface ${1:}{${6}
 	} // END interface $1
 # class
 snippet class
@@ -147,10 +153,10 @@ snippet class
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	class ${4:ClassName}{
-		${5}
+	class $1 {
+		${3}
 	}
 # class extends
 snippet classe
@@ -158,10 +164,10 @@ snippet classe
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	class ${4:ClassName} extends ${5:OtherClassName}{
-		${6}
+	class $1 extends ${3:OtherClassName}{
+		${4}
 	}
 # abstract class
 snippet aclass
@@ -169,14 +175,14 @@ snippet aclass
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	abstract class ${4:ClassName}{
-		${7}
+	abstract class $1 {
+		${5}
 		/**
 		*
 		*/
-		abstract protected function ${5}(${6:param});
+		abstract protected function ${3}(${4:param});
 	}
 # class implements class
 snippet classi
@@ -184,14 +190,14 @@ snippet classi
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	class ${4:ClassName} implements ${5:ClassName}{
+	class $1 implements ${4:ClassName}{
 		/**
 		* Implements method interface
 		*/
-		public function ${6:MethodeInterfaceName}(){
-			${7}
+		public function ${5:MethodeInterfaceName}(){
+			${6}
 		}
 	}
 # abstract class implements class
@@ -200,17 +206,17 @@ snippet aclassi
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	abstract class ${4:ClassName} implements ${5:ClassName}{
+	abstract class $1 implements ${3:ClassName}{
 		/**
 		* Implements method interface
 		*/
-		public function ${6:MethodeInterfaceName}(){
-			${9}
+		public function ${4:MethodeInterfaceName}(){
+			${7}
 		}
 
-		abstract protected function _${7}(${8}):
+		abstract protected function _${5}(${6}):
 	}
 # interface
 snippet interface
@@ -218,10 +224,10 @@ snippet interface
 	 * ${1:undocumented interface}
 	 * 
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	interface ${4:InterfaceName}{
-		${5}
+	interface $1 {
+		${3}
 	}
 # trait
 snippet trait
@@ -229,10 +235,10 @@ snippet trait
 	 * ${1:undocumented trait}
 	 * 
 	 * @package ${2:default}
-	 * @author ${3}
+	 * @author Tarik
 	 */
-	trait ${4:TraitName}{
-		${5}
+	trait $1 {
+		${3}
 	}
 #
 snippet pp
