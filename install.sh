@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Create .vimrc symlink on home from folder .vim
 # TODO Add option backup
 ln -s $HOME/.vim/.vimrc $HOME
