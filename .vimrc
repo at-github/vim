@@ -256,6 +256,8 @@ Bundle 'vim-ruby/vim-ruby'
     " Todo: move this with tabulation
     au BufRead *.php set ft=php.html
     au BufNewFile *.php set ft=php.html
+    au BufRead *.scss set ft=css
+    au BufNewFile *.scss set ft=css
 
 " Specific local config
     if filereadable(glob("~/.vimrc.local"))
