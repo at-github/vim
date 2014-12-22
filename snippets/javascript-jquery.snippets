@@ -6,7 +6,7 @@
 
 snippet addc
 	$(${1:this}).addClass("${2:class}");
-	${3} 
+	${3}
 snippet removec
 	$(${1:this}).removeClass("${2:class}");
 	${3}
@@ -29,7 +29,7 @@ snippet append
 	${3}
 snippet attr
 	$(${1:this}).attr("${2:attribute}");
-	${3} 
+	${3}
 snippet click
 	$(${1:this}).click(function(${2:e}){
 		${3:action};
@@ -79,7 +79,7 @@ snippet $bind
 	$${1:selector}.bind( "${2:event}", function(${3}) {
 		${4:some code};
 	});${5}
-snippet live 
+snippet live
 	$(${1:this}).live("${2:function}", function(${3:e}){
 		${4:action};
 	});
@@ -98,7 +98,7 @@ snippet prevent
 snippet show
 	$(${1:this}).show();
 	${2}
-snippet submit      
+snippet submit
 	$('form${1:#id}').submit();
 	${2}
 snippet this
