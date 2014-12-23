@@ -43,6 +43,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Townk/vim-autoclose'
 Bundle 'vim-scripts/ShowMarks'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'shawncplus/phpcomplete.vim'
 
 " Brief help
 " :BundleList          - list configured bundles
