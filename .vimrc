@@ -161,8 +161,7 @@ Bundle 'vim-ruby/vim-ruby'
     " set path+=repo/**
 
 " Tags
-    " Todo: find dynamically root of repo and source the tag here maybe
-    " unnecessary
+    :!generateTags.sh .
     set tags=./.tags,.tags;
     " Open in page
     " be sure F1 not opening help, and back to normal mode
