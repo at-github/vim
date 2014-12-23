@@ -138,7 +138,7 @@ Bundle 'shawncplus/phpcomplete.vim'
     " u unloaded buffer
     " t tag
     " i included file
-    set complete=.,t,i
+    set complete=t
 
     " Doesn't select the first completion item, but rather
     " just inserts the longest common text of all matches; and the menu will
