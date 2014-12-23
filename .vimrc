@@ -131,8 +131,14 @@ Bundle 'vim-ruby/vim-ruby'
     " Auto complete for all langages
     set omnifunc=syntaxcomplete#Complete
 
-    " Source of completion, Todo: to verify
-    set complete=.,b,u,]
+    " Source of completion, legend:
+    " . current buffer
+    " w buffer in other window
+    " b other buffer loaded
+    " u unloaded buffer
+    " t tag
+    " i included file
+    set complete=.,t,i
 
     " Doesn't select the first completion item, but rather
     " just inserts the longest common text of all matches; and the menu will
