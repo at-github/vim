@@ -258,6 +258,9 @@ Bundle 'shawncplus/phpcomplete.vim'
     let g:html5_microdata_attributes_complete = 0
     let g:html5_aria_attributes_complete = 0
 
+" phpcomplete
+    let g:phpcomplete_parse_docblock_comments = 1
+
 " Snippet
     " Todo: move this with tabulation
     au BufRead *.php set ft=php.html
