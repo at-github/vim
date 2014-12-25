@@ -10,4 +10,4 @@ git submodule init
 git submodule update
 cd -
 
-vim +BundleInstall +qall
+vim +BundleInstall +BundleUpdate +BundleClean +qall
