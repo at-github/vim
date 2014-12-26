@@ -218,7 +218,10 @@ Bundle 'shawncplus/phpcomplete.vim'
 " CtrlP
     let g:ctrlp_show_hidden = 1
     let g:ctrlp_max_files = 0
-    let g:ctrlp_custom_ignore = {'dir': '.sass-cache'}
+    let g:ctrlp_custom_ignore = {
+        \ 'dir' : '\v\.(sass-cache|git)',
+        \ 'file': '\v\.(exe|so|dll|tags|sw*)'
+        \ }
     nnoremap <space>p :CtrlPTag<cr>
 
 " NERDTree
