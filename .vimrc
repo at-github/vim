@@ -255,6 +255,7 @@ Bundle 'shawncplus/phpcomplete.vim'
     " Always show statusline
     set laststatus=2
     let g:airline_theme='simple'
+    let g:airline_powerline_fonts = 1
 
 " Html5
     let g:html5_rdfa_attributes_complete = 0
