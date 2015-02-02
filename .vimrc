@@ -354,10 +354,8 @@ Bundle 'shawncplus/phpcomplete.vim'
     set ttymouse=xterm2
 
     " 80 characters
-    if exists('&colorcolumn')
-        let &colorcolumn=join(range(81,999),",")
-        let &colorcolumn="80,".join(range(120,999),",")
-    endif
+    highlight OverLength ctermbg=235
+    match OverLength /\%81v.\+/
 
     " Lang and corrector
     set spelllang=en,fr
