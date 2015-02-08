@@ -166,6 +166,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     " Todo: find dynamically root of repo and
     " define the path dynamically and recursively
     " set path+=repo/**
+    set path+=.
 
 " Tags
     :!generateTags.sh .
