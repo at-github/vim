@@ -228,7 +228,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 " NERDTree
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     let g:NERDTreeDirArrows=0
-    highlight Directory cterm=bold ctermfg=darkgrey
+    highlight Directory cterm=bold ctermfg=darkgrey gui=bold guifg=darkgrey
 
 " Sparkup
     let g:sparkupExecuteMapping = '<c-e>'
