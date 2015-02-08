@@ -184,13 +184,14 @@ Bundle 'nelstrom/vim-visual-star-search'
     " Todo: close it when finish
     map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
-" Show hidden character, show space as dot and tab as 't.'
+" Show hidden characters
     highlight NonText ctermfg=238
     highlight SpecialKey ctermfg=238
     " Use the same symbols as TextMate for tabstops and EOLs
-    set listchars=tab:t.
+    set listchars=tab:▸\.
     set listchars+=trail:.
-    set listchars+=eol:f
+    set listchars+=eol:¬
+    set list
     nmap <c-l> :set list!<CR>
 
 " Folding
@@ -328,7 +329,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     set wildmode=longest:full,list:full
     set wildmenu
     " Line break
-    set wrap linebreak nolist
+    set wrap linebreak
     " Affiche les numéros de lignes
     hi CursorLineNR cterm=bold ctermfg=black ctermbg=yellow
     set relativenumber
