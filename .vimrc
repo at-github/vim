@@ -217,6 +217,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 
 " Indentline
     let g:indentLine_color_term = 59
+    let g:indentLine_char = "┆"
 
 " CtrlP
     let g:ctrlp_show_hidden = 1
