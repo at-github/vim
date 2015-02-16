@@ -209,7 +209,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     vmap <Space> zf<enter>
 
 " Gvim
-    :set guifont=Monaco:h14
+    :set guifont=Sauce\ Code\ Powerline\ ExtraLight:h14,Menlo:h14
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove tool bar
     :set guioptions-=r  "remove right-hand scroll bar
