@@ -210,11 +210,12 @@ Bundle 'nelstrom/vim-visual-star-search'
     vmap <Space> zf<enter>
 
 " Gvim
-    :set guifont=Sauce\ Code\ Powerline\ ExtraLight:h14,Menlo:h14
+    :set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove tool bar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
+    :set lines=50 columns=162 linespace=1
 
 " Indentline
     let g:indentLine_color_term = 59
