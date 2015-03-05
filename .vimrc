@@ -384,3 +384,6 @@ Bundle 'nelstrom/vim-visual-star-search'
 
     "Toggle NerdTree relative and tagbar
     noremap <Leader><Space> :NERDTreeToggle % <Bar> TagbarToggle<CR>
+
+    "Especially for gstatus
+    set previewheight=25
