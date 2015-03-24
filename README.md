@@ -67,3 +67,29 @@ Dictionnary english and french as loaded
 
 ####Refresh
 Refresh file in buffer `<F5>`
+
+With plugins
+------------
+
+###Shortcuts
+
+####Ctrl-p
+Search tag using *Ctrl-p* `<space>p`
+
+####NERDTree
+Toggle *NERDTree* browser `<Leader>e`
+
+####Tagbar
+Toggle *Tagbar* `<Leader>t`
+
+####NERDTree & Tagbar
+Toggle relative *NERDTree* and *Tagbar* `<Leader><Space>`
+
+####Sparkup
+Use *Sparkup* after write `<c-e>`
+
+####GitGutter
+Toggle GitGutter highlight lines `<Leader>l`
+
+####Easymotion
+Use *Easymotion* search `<Leader>/`
