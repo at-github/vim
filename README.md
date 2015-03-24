@@ -1,4 +1,4 @@
-Vim Tarik's conf
+Tarik's Vim conf
 ================
 
 Install
