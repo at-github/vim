@@ -68,6 +68,9 @@ Dictionnary english and french as loaded
 ####Refresh
 Refresh file in buffer `<F5>`
 
+####Arrows not working for now sorry
+If you want to enable it, comment or delete `noremap <Up> or <Down>...``
+
 With plugins
 ------------
 
