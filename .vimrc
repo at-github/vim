@@ -124,10 +124,10 @@ Bundle 'nelstrom/vim-visual-star-search'
     set hlsearch
     " Preview the search results
     set incsearch
-    nmap <leader>p :cprev<cr>
-    nmap <leader>P :cfirst<cr>
-    nmap <leader>n :cnext<cr>
-    nmap <leader>N :clast<cr>
+    nmap <Leader>p :cprev<cr>
+    nmap <Leader>P :cfirst<cr>
+    nmap <Leader>n :cnext<cr>
+    nmap <Leader>N :clast<cr>
 
 " Completion
     " Auto complete for all langages
@@ -297,7 +297,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     let g:gitgutter_sign_removed_first_line = '✗1'
 
     " Highlight line modified
-    map <leader>l :GitGutterLineHighlightsToggle<CR>
+    map <Leader>l :GitGutterLineHighlightsToggle<CR>
 
 " neocomplcache
     " Disable AutoComplPop
