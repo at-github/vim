@@ -94,9 +94,11 @@ Bundle 'nelstrom/vim-visual-star-search'
     set shiftround
 
 " Colors
-    colorscheme molokai
-    let g:molokai_original = 1
-    let g:rehash256 = 1
+    if filereadable(expand("$HOME/.vim/bundle/molokai/colors/molokai.vim"))
+        colorscheme molokai
+        let g:molokai_original = 1
+        let g:rehash256 = 1
+    endif
 
     " Colors of numbers
     highlight LineNr cterm=bold ctermfg=grey ctermbg=black

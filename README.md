@@ -26,7 +26,6 @@ and launch script install.sh
 * Create a relative symlinc of the **.nvimrc** in your home for neovim
 * Get vundle plugin as submodule git
 * Launch vim and install plugins with vundle method
-    * The first time you launch this script you encour error, because the configuration file need plugin not already installed. Sorry about that.
 
 Natively (without plugins)
 --------------------------
