@@ -170,7 +170,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     set path+=.
 
 " Tags
-    :!generateTags.sh .
+    autocmd VimEnter * if filereadable(expand("$HOME/.local/bin/generateTags.sh")) | :silent !generateTags.sh .
     set tags=./.tags,.tags;
     " Open in page
     " be sure F1 not opening help, and back to normal mode
@@ -182,9 +182,6 @@ Bundle 'nelstrom/vim-visual-star-search'
     map <F3> :split<CR>:exec("tag ".expand("<cword>"))<CR>
     " Open in tab
     map <F4> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-    " Generate tags of the first repo upper find
-    " Todo: close it when finish
-    map <F6> :VimuxRunCommand("generateTags.sh $(findRepo.sh)")<CR>
 
 " Show hidden characters
     highlight NonText ctermfg=238
