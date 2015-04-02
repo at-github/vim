@@ -29,6 +29,12 @@ and launch script install.sh
 * Get vundle plugin as submodule git
 * Launch vim and install plugins with vundle method
 
+Notes
+-----
+
+For better colors, set in your .bashrc or another file sourced by it:
+`export TERM="screen-256color"`
+
 Natively (without plugins)
 --------------------------
 
