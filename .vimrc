@@ -376,12 +376,6 @@ Bundle 'nelstrom/vim-visual-star-search'
     " Set no octal increment number but decimal
     set nrformats=
 
-    " For training
-    noremap <Up> <Nop>
-    noremap <Down> <Nop>
-    noremap <Left> <Nop>
-    noremap <Right> <Nop>
-
     "Toggle NerdTree relative and tagbar
     noremap <Leader><Space> :NERDTreeToggle % <Bar> TagbarToggle<CR>
 
