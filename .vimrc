@@ -334,7 +334,9 @@ Bundle 'nelstrom/vim-visual-star-search'
     set wrap linebreak
     " Affiche les numéros de lignes
     hi CursorLineNR cterm=bold ctermfg=black ctermbg=yellow
-    set relativenumber
+    if v:version > 703
+        set relativenumber
+    endif
     set number
 
     " Ignore la casse lors de recherche
