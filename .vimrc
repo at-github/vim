@@ -59,6 +59,9 @@ Bundle 'nelstrom/vim-visual-star-search'
 " Functions
     function ToggleDisplay()
        echo 'toggleDisplay launched'
+        "Cursor line and column
+        :set cursorline!
+        :set cursorcolumn!
     endfunction
 
 " Leader
