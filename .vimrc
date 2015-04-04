@@ -65,6 +65,9 @@ Bundle 'nelstrom/vim-visual-star-search'
 
         "GitGutter
         :GitGutterToggle
+
+        "Hidded characters
+        :set list!
     endfunction
 
 " Leader
