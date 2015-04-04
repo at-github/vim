@@ -395,4 +395,4 @@ Bundle 'nelstrom/vim-visual-star-search'
     "Especially for gstatus
     set previewheight=25
 
-    noremap <Leader>x :call ToggleDisplay()<CR>
+    noremap <Space>x :call ToggleDisplay()<CR>
