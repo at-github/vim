@@ -62,6 +62,9 @@ Bundle 'nelstrom/vim-visual-star-search'
         "Cursor line and column
         :set cursorline!
         :set cursorcolumn!
+
+        "GitGutter
+        :GitGutterToggle
     endfunction
 
 " Leader
