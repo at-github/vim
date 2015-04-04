@@ -57,6 +57,9 @@ Bundle 'nelstrom/vim-visual-star-search'
 " NOTE: comments after Bundle commands are not allowed.
 
 " Functions
+    function ToggleDisplay()
+       echo 'toggleDisplay launched'
+    endfunction
 
 " Leader
     let mapleader=","
@@ -383,3 +386,5 @@ Bundle 'nelstrom/vim-visual-star-search'
 
     "Especially for gstatus
     set previewheight=25
+
+    noremap <Leader>x :call ToggleDisplay()<CR>
