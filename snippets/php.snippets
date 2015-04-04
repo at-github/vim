@@ -279,7 +279,7 @@ snippet def
 snippet def?
 	${1}defined('${2}')${3}
 snippet wh
-	while(${1:/* condition */}){
+	while (${1:/* condition */}) {
 		${2:// code...}
 	}
 # do ... while
@@ -324,11 +324,11 @@ snippet case
 		${2:// code...}
 		break;${3}
 snippet for
-	for($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}){
+	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) {
 		${4: // code...}
 	}
 snippet foreach
-	foreach($${1:variable} as $${2:key}){
+	foreach ($${1:variable} as $${2:key}) {
 		${3:// code...}
 	}
 snippet fun
