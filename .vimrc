@@ -304,7 +304,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 
 " Airblade
     highlight clear SignColumn
-    let g:gitgutter_sign_added = '➕'
+    let g:gitgutter_sign_added = '+'
     let g:gitgutter_sign_modified = '⚡'
     let g:gitgutter_sign_removed = '✗'
     let g:gitgutter_sign_removed_first_line = '✗1'
