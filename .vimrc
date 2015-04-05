@@ -338,9 +338,15 @@ Bundle 'nelstrom/vim-visual-star-search'
     let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 " Other
-    " Command line
-    set wildmode=longest:full,list:full
+    " Command line completion
+    " ex
+    "   =full         -> complete with the first match, tab to change suggestion
+    "   =longest:full -> no completion, tab no effect, ctrl-p and ctrl-n to change suggestion
+    "   =list:full    -> complete with the first match, tab and ctrl-p and ctrl-n to change suggestion *
+    "   =list,full    -> not complete the first time, tab and ctrl-p and ctrl-n to change suggestion 
     set wildmenu
+    set wildmode=list:full
+
     " Line break
     set wrap linebreak
     " Affiche les numéros de lignes
