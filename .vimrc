@@ -153,7 +153,7 @@ Bundle 'nelstrom/vim-visual-star-search'
     " u unloaded buffer
     " t tag
     " i included file
-    set complete=t
+    set complete=.,w,b,u,t,i,k
 
     " Doesn't select the first completion item, but rather
     " just inserts the longest common text of all matches; and the menu will
