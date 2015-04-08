@@ -67,6 +67,9 @@ Bundle 'nelstrom/vim-visual-star-search'
 
         "Hidded characters
         :set list!
+
+        "Hidded search highlighted
+        set hlsearch!
     endfunction
 
 " Leader
