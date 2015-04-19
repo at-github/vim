@@ -70,7 +70,7 @@ Dictionnary english and french as loaded
 * Jump to definition                     `<F1>`
 * Jump to definition in vertical vsplit  `<F2>`
 * Jump to definition in horizontal split `<F3>`
-* Jump to definition in new tab split    `<F3>`
+* Jump to definition in new tab split    `<F4>`
 
 ####Refresh
 Refresh file in buffer `<F5>`
