@@ -354,3 +354,10 @@ snippet pdd
 snippet throw
 	throw new Exception('${1:message}');
 	${2}
+snippet try
+	try {
+		${1};
+	} catch (Exception $e){
+		print "${2:message}: $e";
+	}
+	${3}
