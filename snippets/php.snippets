@@ -351,3 +351,6 @@ snippet pdd
 	var_dump($${1});
 	echo '</pre>';
 	die();${2}
+snippet throw
+	throw new Exception('${1:message}');
+	${2}
