@@ -310,6 +310,12 @@ Bundle 'nelstrom/vim-visual-star-search'
     let g:gitgutter_sign_removed = '✗'
     let g:gitgutter_sign_removed_first_line = '✗1'
 
+    " Update signs
+    " Event: Stop typing
+    let g:gitgutter_realtime = 1
+    " Event: Switch buffer & Switch tab
+    let g:gitgutter_eager = 1
+
     " Highlight line modified
     map <Leader>l :GitGutterLineHighlightsToggle<CR>
 
