@@ -5,3 +5,4 @@ todo
 bundle/
 .tags
 .vimrc.local
+.ctagsignore
