@@ -46,6 +46,7 @@ Bundle 'vim-scripts/ShowMarks'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'tpope/vim-endwise'
 
 " Brief help
 " :BundleList          - list configured bundles
