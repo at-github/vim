@@ -21,7 +21,6 @@ Bundle 'gmarik/vundle'
 " Bundle 'git://git.wincent.com/command-t.git'
 
 Bundle 'tomasr/molokai'
-Bundle 'benmills/vimux'
 Bundle 'bingaman/vim-sparkup'
 Bundle 'bling/vim-airline'
 Bundle 'evanmiller/nginx-vim-syntax'
