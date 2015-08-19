@@ -46,6 +46,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-endwise'
+Bundle 'mhinz/vim-startify'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -347,6 +348,36 @@ Bundle 'tpope/vim-endwise'
     let showmarks_enable = 0
     " Include only my markers
     let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+" Startify
+    let g:startify_custom_header=[
+        \ '        **          **********',
+        \ '       ****        /////**/// ',
+        \ '      **//**           /**    ',
+        \ '     **  //**          /**    ',
+        \ '    **********         /**    ',
+        \ '   /**//////** **      /**    ',
+        \ '   /**     /**/**      /**    ',
+        \ '   //      // //       //*    ',
+        \ '',
+        \ '   ---------------------------',
+        \ '',
+    \ ]
+
+    let g:startify_custom_footer= [
+        \ '',
+        \ '   ---------------------------',
+        \ '   http://github.com/at-github/vim'
+        \]
+
+    let g:startify_bookmarks = [
+        \ '~/.vimrc',
+        \ '~/.vimrc.bebo',
+        \ '~/.gitconfig',
+        \ '~/.ctagsignore',
+        \ '~/.bashrc',
+        \ '~/.bash_aliases'
+    \ ]
 
 " Other
     " Command line completion
