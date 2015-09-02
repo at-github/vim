@@ -47,6 +47,7 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-endwise'
 Bundle 'mhinz/vim-startify'
+Bundle 'fatih/vim-go'
 
 " Brief help
 " :BundleList          - list configured bundles
