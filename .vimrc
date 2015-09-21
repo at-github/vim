@@ -188,7 +188,6 @@ Bundle 'fatih/vim-go'
     set path+=.
 
 " Tags
-    autocmd VimEnter * if filereadable(expand("$HOME/.local/bin/generateTags.sh")) | :silent !generateTags.sh .
     set tags=./.tags,.tags;
     " Open in page
     " be sure F1 not opening help, and back to normal mode
