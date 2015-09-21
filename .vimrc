@@ -47,6 +47,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-endwise'
 Bundle 'mhinz/vim-startify'
 Bundle 'fatih/vim-go'
+Bundle 'Prosumma/vim-pgsql'
 
 " Brief help
 " :BundleList          - list configured bundles
