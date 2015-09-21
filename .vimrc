@@ -287,10 +287,9 @@ Bundle 'fatih/vim-go'
 
 " Snippet
     " Todo: move this with tabulation
-    au BufRead *.php set ft=php.html
-    au BufNewFile *.php set ft=php.html
-    au BufRead *.scss set ft=css
-    au BufNewFile *.scss set ft=css
+    au BufNewFile,BufRead *.php setf php.html
+    au BufNewFile,BufRead *.scss setf css
+    au BufNewFile,BufRead *.pgsql setf pgsql
 
 " Specific local config
     if filereadable(glob("~/.vimrc.local"))
