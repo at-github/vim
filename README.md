@@ -8,24 +8,20 @@ Install
 
 To install this configuration, we need some steps:
 
-One of the firsts steps it`s to clone this repo obviously
-```
-git clone https://github.com/at-github/vim.git ~/.vim
-```
+One of the firsts steps it's to clone this repo obviously:
+
+`git clone https://github.com/at-github/vim.git ~/.vim`
 
 After that move to this directory
-```
-cd ~/.vim
-```
+`cd ~/.vim`
 
 and launch script install.sh
-```
-./install.sh
-```
+`./install.sh`
 
 ###What does this script
-* Create a relative symlinc of the **.vimrc** in your home
-* Create a relative symlinc of the **.nvimrc** in your home for neovim
+
+* Create a relative symlinc of the *.vimrc* in your home
+* Create a relative symlinc of the *.nvimrc* in your home for neovim
 * Get vundle plugin as submodule git
 * Launch vim and install plugins with vundle method
 
