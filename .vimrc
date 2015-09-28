@@ -48,7 +48,11 @@ Bundle 'tpope/vim-endwise'
 Bundle 'mhinz/vim-startify'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
+<<<<<<< HEAD
 Bundle 'Glench/Vim-Jinja2-Syntax'
+=======
+Bundle 'tclh123/vim-thrift'
+>>>>>>> Plugin - add plugin thrift
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -294,6 +298,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
                                                     "No way to use setf
                                                     "instead set ft=
     au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+    au BufNewFile,BufRead *.thrift setf thrift
 
 " Specific local config
     if filereadable(glob("~/.vimrc.local"))
