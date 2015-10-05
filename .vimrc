@@ -48,6 +48,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'mhinz/vim-startify'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -290,6 +291,9 @@ Bundle 'Prosumma/vim-pgsql'
     au BufNewFile,BufRead *.php setf php.html
     au BufNewFile,BufRead *.scss setf css
     au BufNewFile,BufRead *.pgsql setf pgsql
+                                                    "No way to use setf
+                                                    "instead set ft=
+    au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 
 " Specific local config
     if filereadable(glob("~/.vimrc.local"))
