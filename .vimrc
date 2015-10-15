@@ -194,7 +194,8 @@ Bundle 'tclh123/vim-thrift'
     set path+=.
 
 " Tags
-    set tags=./.tags,.tags;
+    let myPath = join([substitute(system("findRepo.sh"), '\n', '', ''), '.git', '.tags' ], '/')
+    let &tags=myPath
     " Open in page
     " be sure F1 not opening help, and back to normal mode
     imap <F1> <Esc>
