@@ -48,11 +48,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'mhinz/vim-startify'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
-<<<<<<< HEAD
 Bundle 'Glench/Vim-Jinja2-Syntax'
-=======
 Bundle 'tclh123/vim-thrift'
->>>>>>> Plugin - add plugin thrift
 
 " Brief help
 " :BundleList          - list configured bundles
