@@ -385,6 +385,8 @@ Bundle 'tclh123/vim-thrift'
         \ '~/.bash_aliases'
     \ ]
 
+    let g:ctrlp_reuse_window  = 'startify'
+
 " Other
     " Command line completion
     " ex
