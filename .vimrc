@@ -50,6 +50,7 @@ Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'tclh123/vim-thrift'
+Bundle 'vim-utils/vim-man'
 
 " Brief help
 " :BundleList          - list configured bundles
