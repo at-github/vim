@@ -244,7 +244,7 @@ Bundle 'tclh123/vim-thrift'
     let g:ctrlp_max_files = 0
     let g:ctrlp_custom_ignore = {
         \ 'dir' : '\v\.(sass-cache|git)',
-        \ 'file': '\v\.(exe|so|dll|tags|sw*)'
+        \ 'file': '\v\.(exe|so|dll|tags|sw*)$'
         \ }
     nnoremap <space>p :CtrlPTag<cr>
 
