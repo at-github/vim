@@ -131,11 +131,11 @@ Bundle 'vim-utils/vim-man'
 
     " Colors of tab
     " General colors tab
-    highlight TabLine ctermbg=darkgrey ctermfg=grey
+    highlight TabLine ctermbg=240 ctermfg=grey
     " Active tab
-    highlight TabLineSel cterm=bold ctermbg=yellow ctermfg=black
+    highlight TabLineSel cterm=bold ctermbg=236 ctermfg=202
     " Tab bar
-    highlight TabLineFill ctermfg=black
+    highlight TabLineFill ctermfg=240
 
     " Marks colors
     highlight ShowMarksHLla ctermbg=236 ctermfg=darkgrey
