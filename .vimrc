@@ -354,6 +354,12 @@ Bundle 'vim-utils/vim-man'
     " Include only my markers
     let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+" Neovim
+    " Map for escaping from terminal inside neovim
+    if exists(':tnoremap')
+        :tnoremap <Esc> <C-\><C-n>
+    endif
+
 " Other
     " Command line completion
     " ex
