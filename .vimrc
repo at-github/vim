@@ -45,7 +45,6 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-endwise'
-Bundle 'mhinz/vim-startify'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
@@ -355,38 +354,6 @@ Bundle 'vim-utils/vim-man'
     let showmarks_enable = 0
     " Include only my markers
     let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-" Startify
-    let g:startify_custom_header=[
-        \ '        **          **********',
-        \ '       ****        /////**/// ',
-        \ '      **//**           /**    ',
-        \ '     **  //**          /**    ',
-        \ '    **********         /**    ',
-        \ '   /**//////** **      /**    ',
-        \ '   /**     /**/**      /**    ',
-        \ '   //      // //       //*    ',
-        \ '',
-        \ '   ---------------------------',
-        \ '',
-    \ ]
-
-    let g:startify_custom_footer= [
-        \ '',
-        \ '   ---------------------------',
-        \ '   http://github.com/at-github/vim'
-        \]
-
-    let g:startify_bookmarks = [
-        \ '~/.vimrc',
-        \ '~/.vimrc.bebo',
-        \ '~/.gitconfig',
-        \ '~/.ctagsignore',
-        \ '~/.bashrc',
-        \ '~/.bash_aliases'
-    \ ]
-
-    let g:ctrlp_reuse_window  = 'startify'
 
 " Other
     " Command line completion
