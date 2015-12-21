@@ -227,13 +227,12 @@ Bundle 'vim-utils/vim-man'
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-" Gvim
+" " Gvim
     :set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove tool bar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
-    :set lines=50 columns=162 linespace=1
 
 " Indentline
     let g:indentLine_color_term = 59
@@ -392,7 +391,9 @@ Bundle 'vim-utils/vim-man'
 
     " Support de la souris
     set mouse=a
-    set ttymouse=xterm2
+    if exists('ttymouse')
+        set ttymouse=xterm2
+    endif
 
     " 80 characters
     highlight OverLength ctermbg=235
