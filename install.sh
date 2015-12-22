@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 # Create .vimrc symlink on home from folder .vim
-# TODO Add option backup
 ln -fs $HOME/.vim/.vimrc $HOME/.vimrc
-ln -fs $HOME/.vim/.vimrc $HOME/.nvimrc
+
+ln -fs $HOME/.vim $HOME/.config/nvim
+ln -fs $HOME/.vim/.vimrc $HOME/.vim/init.vim
 
 # Init and pull submodules plugins
 cd $HOME/.vim

@@ -6,3 +6,4 @@ bundle/
 .tags
 .vimrc.local
 .ctagsignore
+init.vim
