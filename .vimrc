@@ -380,9 +380,13 @@ Bundle 'ryanoasis/vim-devicons'
     " Todo: do something for ctrlp not showing glyph
 
 " Neovim
-    " Map for escaping from terminal inside neovim
+    " Terminal
     if exists(':tnoremap')
+        " Map for escaping from terminal inside neovim
         :tnoremap <Esc> <C-\><C-n>
+        nmap ts :sp term://zsh<CR>i
+        nmap tv :vsp term://zsh<CR>i
+        nmap tt :tabe term://zsh<CR>i
     endif
 
 " Other
