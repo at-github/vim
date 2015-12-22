@@ -249,6 +249,7 @@ Bundle 'Xuyuanp/nerdtree-git-plugin'
     nnoremap <space>p :CtrlPTag<cr>
 
 " NERDTree
+    let NERDTreeShowHidden=1
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     highlight Directory cterm=bold ctermfg=darkgrey gui=bold guifg=darkgrey
 
