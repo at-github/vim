@@ -50,6 +50,7 @@ Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'tclh123/vim-thrift'
 Bundle 'vim-utils/vim-man'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -308,6 +309,19 @@ Bundle 'vim-utils/vim-man'
 " Cursor
     set cursorline
     set cursorcolumn
+
+" Nerdtree-git-plugin
+    let g:NERDTreeIndicatorMapCustom = {
+        \ "Modified" : "⚡",
+        \ "Staged"   : "+",
+        \ "Untracked": "✭",
+        \ "Renamed"  : "➜",
+        \ "Unmerged" : "=",
+        \ "Deleted"  : "✖",
+        \ "Dirty"    : "✗",
+        \ "Clean"    : "✔︎",
+        \ "Unknown"  : "?"
+    \}
 
 " Airblade
     highlight clear SignColumn
