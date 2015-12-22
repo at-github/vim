@@ -25,7 +25,7 @@ Bundle 'bingaman/vim-sparkup'
 Bundle 'bling/vim-airline'
 Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'plasticboy/vim-markdown'
@@ -52,6 +52,10 @@ Bundle 'tclh123/vim-thrift'
 Bundle 'vim-utils/vim-man'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'gorodinskiy/vim-coloresque'
+
+" Must be loaded after some other plugins
+" like: NERDTree, vim-airline, nerdtree-git-plugin
+Bundle 'ryanoasis/vim-devicons'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -369,6 +373,11 @@ Bundle 'gorodinskiy/vim-coloresque'
     let showmarks_enable = 0
     " Include only my markers
     let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+" Devicons
+    " Need to install font patched
+    " https://github.com/ryanoasis/nerd-fonts
+    " Todo: do something for ctrlp not showing glyph
 
 " Neovim
     " Map for escaping from terminal inside neovim
