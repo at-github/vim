@@ -233,7 +233,7 @@ Bundle 'ryanoasis/vim-devicons'
     set foldnestmax=1
     vmap <Space> zf<enter>
 
-" " Gvim
+" Gvim
     :set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 10
     :set guioptions-=m  "remove menu bar
     :set guioptions-=T  "remove tool bar
@@ -391,9 +391,9 @@ Bundle 'ryanoasis/vim-devicons'
     "   =full         -> complete with the first match, tab to change suggestion
     "   =longest:full -> no completion, tab no effect, ctrl-p and ctrl-n to change suggestion
     "   =list:full    -> complete with the first match, tab and ctrl-p and ctrl-n to change suggestion *
-    "   =list,full    -> not complete the first time, tab and ctrl-p and ctrl-n to change suggestion
+    "   =list,full    -> not complete the first time tab, tab again or ctrl-p and ctrl-n to change suggestion
     set wildmenu
-    set wildmode=list:full
+    set wildmode=list,full
 
     " Line break
     set wrap linebreak
