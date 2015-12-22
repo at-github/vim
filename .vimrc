@@ -51,6 +51,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'tclh123/vim-thrift'
 Bundle 'vim-utils/vim-man'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'gorodinskiy/vim-coloresque'
 
 " Brief help
 " :BundleList          - list configured bundles
