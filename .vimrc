@@ -452,3 +452,7 @@ Bundle 'ryanoasis/vim-devicons'
     set previewheight=25
 
     noremap <Space>x :call ToggleDisplay()<CR>
+
+    " undo
+    set undofile
+    set undodir="$HOME/.vim.undo"
