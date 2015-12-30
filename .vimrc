@@ -20,44 +20,52 @@ Bundle 'gmarik/vundle'
 " Scripts not on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
 
-Bundle 'tomasr/molokai'
-Bundle 'bingaman/vim-sparkup'
-Bundle 'bling/vim-airline'
-Bundle 'https://github.com/majutsushi/tagbar'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'ctrlpvim/ctrlp.vim'
+" Syntax
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'scrooloose/nerdtree'
+Bundle 'bingaman/vim-sparkup'
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-endwise'
 Bundle 'vim-scripts/tComment'
-Bundle 'Yggdroot/indentLine'
-Bundle 'tommcdo/vim-exchange'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
-Bundle 'vim-scripts/ShowMarks'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'nelstrom/vim-visual-star-search'
-Bundle 'tpope/vim-endwise'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'tclh123/vim-thrift'
-Bundle 'vim-utils/vim-man'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'gorodinskiy/vim-coloresque'
+Bundle 'Shougo/neocomplcache'
 
+" Browse
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'vim-scripts/ShowMarks'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'nelstrom/vim-visual-star-search'
+
+" Display
+Bundle 'tomasr/molokai'
+Bundle 'bling/vim-airline'
+Bundle 'Yggdroot/indentLine'
 " Must be loaded after some other plugins
 " like: NERDTree, vim-airline, nerdtree-git-plugin
 Bundle 'ryanoasis/vim-devicons'
+
+" Git
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+
+" Other
+Bundle 'https://github.com/majutsushi/tagbar'
+Bundle 'tpope/vim-repeat'
+Bundle 'tommcdo/vim-exchange'
+Bundle 'vim-utils/vim-man'
 
 " Brief help
 " :BundleList          - list configured bundles
