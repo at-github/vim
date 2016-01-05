@@ -92,6 +92,18 @@ Bundle 'vim-utils/vim-man'
         set hlsearch!
     endfunction
 
+    let g:quickfix_is_open = 0
+
+    function QuickfixToggle()
+        if g:quickfix_is_open
+            cclose
+            let g:quickfix_is_open = 0
+        else
+            copen
+            let g:quickfix_is_open = 1
+        endif
+    endfunction
+
 " Leader
     let mapleader=","
     noremap \ ,
@@ -456,6 +468,7 @@ Bundle 'vim-utils/vim-man'
 
     map <F5> :e!<CR>
 
+    nnoremap <leader>c :call QuickfixToggle()<CR>
     " Set no octal increment number but decimal
     set nrformats=
 
