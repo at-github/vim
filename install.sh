@@ -20,4 +20,6 @@ git submodule init
 git submodule update
 cd -
 
-vim +BundleInstall +BundleUpdate +BundleClean +qall
+# Install, update and clean vim plugin
+vim +BundleInstall +qa
+vim +BundleUpdate +BundleClean +qall
