@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
 # Create .vimrc symlink on home from folder .vim
-ln -fs $HOME/.vim/.vimrc $HOME/.vimrc
+if [[ ! -L $HOME/.vimrc ]]; then
+    ln -fs $HOME/.vim/.vimrc $HOME/.vimrc
+fi
 
-ln -fs $HOME/.vim $HOME/.config/nvim
-ln -fs $HOME/.vim/.vimrc $HOME/.vim/init.vim
+# Neovim, symlink vim folder and .vimrc
+if [[ ! -L $HOME/.config/nvim ]]; then
+    ln -fs $HOME/.vim $HOME/.config/nvim
+fi
+
+if [[ ! -L $HOME/.vim/init.vim ]]; then
+    ln -fs $HOME/.vim/.vimrc $HOME/.vim/init.vim
+fi
 
 # Init and pull submodules plugins
 cd $HOME/.vim
