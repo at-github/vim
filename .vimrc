@@ -278,6 +278,8 @@ Bundle 'vim-utils/vim-man'
 " NERDTree
     let NERDTreeShowHidden=1
     let NERDTreeIgnore=['.*.sw.*$', '.git']
+    let g:NERDTreeDirArrowExpandable  = ''
+    let g:NERDTreeDirArrowCollapsible = ''
     autocmd FileType nerdtree setlocal nolist
     autocmd FileType nerdtree setlocal nocursorline
     autocmd FileType nerdtree setlocal nocursorcolumn
