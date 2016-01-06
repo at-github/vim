@@ -279,6 +279,9 @@ Bundle 'vim-utils/vim-man'
     let NERDTreeShowHidden=1
     let NERDTreeIgnore=['.*.sw.*$', '.git']
     autocmd FileType nerdtree setlocal nolist
+    autocmd FileType nerdtree setlocal nocursorline
+    autocmd FileType nerdtree setlocal nocursorcolumn
+
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     highlight Directory cterm=bold ctermfg=darkgrey gui=bold guifg=darkgrey
 
