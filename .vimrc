@@ -284,6 +284,10 @@ Bundle 'vim-utils/vim-man'
     autocmd FileType nerdtree setlocal nocursorline
     autocmd FileType nerdtree setlocal nocursorcolumn
 
+    " Launch NERDTree if no file is specified
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
     silent! nmap <Leader>e :NERDTreeTabsToggle<CR>
     highlight Directory cterm=bold ctermfg=darkgrey gui=bold guifg=darkgrey
 
