@@ -194,10 +194,7 @@ snippet class class/implements
 	class $1 implements
 		${3:ClassName}
 	{
-		/**
-		* Implements method interface
-		*/
-		public function ${4:MethodeInterfaceName}()
+		public function ${4:MethodeInterfaceName}($4)
 		{
 			${5}
 		}
@@ -212,15 +209,12 @@ snippet class class/abstract/implements
 	abstract class $1 implements
 		${3:ClassName}
 	{
-		/**
-		* Implements method interface
-		*/
-		public function ${4:MethodeInterfaceName}()
+		public function ${4:MethodeInterfaceName}(${5})
 		{
-			${7}
+			${6}
 		}
 
-		abstract protected function _${5}(${6}):
+		abstract protected function _${7}(${8}):
 	}
 # interface
 snippet interface
