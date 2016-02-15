@@ -66,6 +66,7 @@ Bundle 'https://github.com/majutsushi/tagbar'
 Bundle 'tpope/vim-repeat'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'vim-utils/vim-man'
+Bundle 'chrisbra/csv.vim'
 
 " Brief help
 " :BundleList          - list configured bundles
