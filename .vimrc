@@ -50,7 +50,8 @@ Bundle 'nelstrom/vim-visual-star-search'
 
 " Display
 Bundle 'tomasr/molokai'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'Yggdroot/indentLine'
 " Must be loaded after some other plugins
 " like: NERDTree, vim-airline, nerdtree-git-plugin
