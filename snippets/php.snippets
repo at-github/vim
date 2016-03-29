@@ -363,3 +363,18 @@ snippet try
 		print "${2:message}: $e";
 	}
 	${3}
+#phpunit
+snippet dataProvider
+	/**
+	 * @dataProvider ${1:methodName}Provider
+	 */
+	public function test${2:testName}()
+	{
+		${3://assert}
+	}
+
+	public function $1(){
+		return array(
+			${4:case one} => array(${5:expect, method param})
+		);
+	}
