@@ -422,10 +422,12 @@ Bundle 'jiangxincode/vim-kite'
     endif
 
     " strip, skin with less graphical stuff terminal
-    autocmd TermOpen * if &buftype == 'terminal' | :set nolist | endif
-    autocmd TermOpen * if &buftype == 'terminal' | :setlocal foldcolumn=0 | endif
-    autocmd TermOpen * if &buftype == 'terminal' | :set nocul| endif
-    autocmd TermOpen * if &buftype == 'terminal' | :set nocuc| endif
+    if exists(':terminal')
+        autocmd TermOpen * if &buftype == 'terminal' | :set nolist | endif
+        autocmd TermOpen * if &buftype == 'terminal' | :setlocal foldcolumn=0 | endif
+        autocmd TermOpen * if &buftype == 'terminal' | :set nocul| endif
+        autocmd TermOpen * if &buftype == 'terminal' | :set nocuc| endif
+    endif
 
 " Other
     " Command line completion
