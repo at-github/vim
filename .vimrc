@@ -425,6 +425,12 @@ Bundle 'jiangxincode/vim-kite'
         nmap tt :tabe term://zsh<CR>i
     endif
 
+    " strip, skin with less graphical stuff terminal
+    autocmd TermOpen * if &buftype == 'terminal' | :set nolist | endif
+    autocmd TermOpen * if &buftype == 'terminal' | :setlocal foldcolumn=0 | endif
+    autocmd TermOpen * if &buftype == 'terminal' | :set nocul| endif
+    autocmd TermOpen * if &buftype == 'terminal' | :set nocuc| endif
+
 " Other
     " Command line completion
     " ex
