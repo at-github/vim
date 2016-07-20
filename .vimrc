@@ -466,7 +466,7 @@ Bundle 'jiangxincode/vim-kite'
 
     " Support de la souris
     set mouse=a
-    if exists('ttymouse')
+    if !has('nvim')
         set ttymouse=xterm2
     endif
 
