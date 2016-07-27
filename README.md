@@ -1,7 +1,7 @@
 Tarik's Vim conf
 ================
 
-![Screenshot](screenshot-vim-full.jpg)
+![Screenshot](screenshot-vim-full.png)
 
 Install
 -------
