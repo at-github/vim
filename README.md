@@ -71,6 +71,14 @@ Dictionnary english and french as loaded
 ####Refresh
 Refresh file in buffer `<F5>`
 
+Neovim
+------
+###Shortcuts
+
+* `ts` new term in split
+* `tv` new term in vertical split
+* `tt` new term in tab
+
 With plugins
 ------------
 
