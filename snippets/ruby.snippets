@@ -508,16 +508,16 @@ snippet scenario
 		${2}
 	end
 snippet feature
-	feature '${1:"text" }'${2:"tag?"} do
+	feature '${1:text }'${2:tag?} do
 		${3}
 	end
 snippet before
-	before ${1:":each"} do
+	before ${1::each} do
 		${2}
 	end
 snippet context
-	context '${1:"context"}' do
+	context '${1:context}' do
 		${2}
 	end
 snippet expect
-	expect(${1:"something"}).to ${2:"test"} ${3:"value"}
+	expect(${1:something}).to ${2:test} ${3:value}
