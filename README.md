@@ -71,6 +71,12 @@ Dictionnary english and french as loaded
 ####Refresh
 Refresh file in buffer `<F5>`
 
+####Graphical
+Toggle graphical information with `<leader>l`
+
+![Screenshot](neovim-graphic-more.png)
+![Screenshot](neovim-graphic-less.png)
+
 Neovim
 ------
 ###Shortcuts
