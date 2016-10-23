@@ -403,3 +403,33 @@ snippet dataProvider
 			${5}
 		);
 	}
+snippet singleton
+	private static $oInstance;
+
+	/**
+	 * @brief : ${1:describe singleton}
+	 */
+	private function __construct(){
+		${2}
+	}
+
+	/**
+	 * @brief : $1
+	 */
+	private function __clone(){
+		$2
+	}
+
+	/**
+	 * @brief : ${3:getter of this object}
+	 * @return: ${4:object, instance of this class}
+	 */
+	public static function getInstance(){
+		if (null === self::$oInstance){
+			self::$oInstance = new self();
+		}
+		${5}
+		return self::$oInstance;
+	}
+
+	${6}
