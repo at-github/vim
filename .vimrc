@@ -224,7 +224,7 @@ Bundle 'jiangxincode/vim-kite'
     set path+=.
 
 " Tags
-    let myPath = join([substitute(system("findRepo.sh"), '\n', '', ''), '.git', '.tags' ], '/')
+    let myPath = join([substitute(system("findRepo.sh"), '\n', '', ''), '.tags' ], '/')
     let &tags=myPath
     " Open in page
     " be sure F1 not opening help, and back to normal mode
