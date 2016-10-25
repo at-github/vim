@@ -218,9 +218,6 @@ Bundle 'jiangxincode/vim-kite'
     set splitright
 
 " Path
-    " Todo: find dynamically root of repo and
-    " define the path dynamically and recursively
-    " set path+=repo/**
     set path+=.
 
 " Tags
