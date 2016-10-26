@@ -343,6 +343,10 @@ snippet die
 	die(${1});${2}
 snippet vd
 	var_dump(${1:subject});${2}
+snippet vda
+	var_dump([
+		'${1:variable name}' => $$1
+	]);${2}
 snippet pd
 	echo '<pre>';
 	var_dump($${1});
