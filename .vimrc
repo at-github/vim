@@ -35,7 +35,6 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
-Bundle 'tclh123/vim-thrift'
 Bundle 'gorodinskiy/vim-coloresque'
 Bundle 'Shougo/neocomplcache'
 
@@ -330,11 +329,6 @@ Bundle 'jiangxincode/vim-kite'
     " Todo: move this with tabulation
     au BufNewFile,BufRead *.php setf php.html
     au BufNewFile,BufRead *.scss setf css
-    au BufNewFile,BufRead *.pgsql setf pgsql
-                                                    "No way to use setf
-                                                    "instead set ft=
-    au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
-    au BufNewFile,BufRead *.thrift setf thrift
 
 " Specific local config
     if filereadable(glob("~/.vimrc.local"))
