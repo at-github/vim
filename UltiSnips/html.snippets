@@ -1,0 +1,250 @@
+# Some useful Unicode entities
+snippet nbs "Non-Breaking Space"
+&nbsp;
+endsnippet
+
+snippet left "arrow left"
+&#x2190;
+endsnippet
+
+snippet right "arrow right"
+&#x2192;
+endsnippet
+
+snippet up "arrow up"
+&#x2191;
+endsnippet
+
+snippet down
+&#x2193;
+endsnippet
+
+snippet return
+&#x21A9;
+endsnippet
+
+snippet backtab
+&#x21E4;
+endsnippet
+
+snippet tab
+&#x21E5;
+endsnippet
+
+snippet shift
+&#x21E7;
+endsnippet
+
+snippet control
+&#x2303;
+endsnippet
+
+snippet enter
+&#x2305;
+endsnippet
+
+snippet command
+&#x2318;
+endsnippet
+
+snippet option
+&#x2325;
+endsnippet
+
+snippet delete
+&#x2326;
+endsnippet
+
+snippet backspace
+&#x232B;
+endsnippet
+
+snippet escape
+&#x238B;
+endsnippet
+
+# Generic Doctype
+snippet doct5 "HTML 5"
+<!DOCTYPE HTML>
+endsnippet
+
+snippet doctype "HTML 5"
+<!DOCTYPE HTML>
+endsnippet
+
+snippet html
+<html>
+	${0:${VISUAL:<!--Some other tags-->}}
+</html>
+endsnippet
+
+snippet body
+<body>
+	${0:${VISUAL:<!--Some other tags-->}}
+</body>
+endsnippet
+
+snippet head
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"`Close()`>
+
+	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+	${0}
+</head>
+endsnippet
+
+snippet title
+<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
+endsnippet
+
+snippet script "zone of old school javaScript in html"
+<script type="text/javascript" charset="utf-8">
+	${1}
+</script>${0}
+endsnippet
+
+snippet jssrc
+<script src="${1:javaScript file path}" type="text/javascript" charset="utf-8"></script>
+$0
+endsnippet
+
+snippet style
+<style type="text/css" media="${1:screen}">
+	${0}
+</style>
+endsnippet
+
+snippet . "class with classe"
+class="${1}"$0
+endsnippet
+
+snippet n
+name="${1}"${2}
+endsnippet
+
+snippet id
+id="${1}"${2}
+endsnippet
+
+snippet #
+id="${1}"${2}
+endsnippet
+
+snippet a
+<a href="$1" target="$2">$3</a>
+endsnippet
+
+snippet img
+<img src="${1}" alt="${2}" title="${3}"/>${4}
+endsnippet
+
+snippet br
+<br`Close()[1:]`>
+endsnippet
+
+snippet form
+<form action="${1:`Filename('$1_submit')`}" method="${2:get}" accept-charset="utf-8">
+	${3}
+</form>
+endsnippet
+
+snippet input
+<input type="${1:text|submit|hidden}" name="${2:some_name}" value="${3}"`Close()`>${4}
+endsnippet
+
+snippet inputnb
+<input type="number" name="${1:some_name}" value="${2}" min="${3}" max="${4}" step="${5}">${6}
+endsnippet
+
+snippet inputtel
+<input type="tel" name="${1:some_name}" value="${2}" ${3:required}>${4}
+endsnippet
+
+snippet inputemail
+<input type="email" name="${1:some_name}" value="${2}" ${3:required}>${4}
+endsnippet
+
+snippet inputurl
+<input type="url" name="${1:some_name}">${2}
+endsnippet
+
+snippet inputs
+<input type="search" name="${1:some_name}">${2}
+endsnippet
+
+snippet inputrange
+<input type="range" name="${1:some_name}" min="${2}" max="${3}">${4}
+endsnippet
+
+snippet inputdate
+<input type="date" name="${1:some_name}" min="${2}" max="${3}">${4}
+endsnippet
+
+snippet inputcolor
+<input type="color" name="${1:some_name}">${2}
+endsnippet
+
+snippet label
+<label for="${2:$1}">${1:name}</label><input type="${3:text/submit/hidden/button}" name="${4:$2}" value="${5}" id="${6:$2}"`Close()`>${7}
+endsnippet
+
+snippet css
+<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" charset="utf-8"`Close()`>${4}
+endsnippet
+
+snippet mailto
+<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
+endsnippet
+
+snippet meta
+<meta name="${1:name}" content="${2:content}"`Close()`>${3}
+endsnippet
+
+snippet opt
+<option value="${1:option}">${2:$1}</option>${3}
+endsnippet
+
+snippet select
+<select name="${1:some_name}" id="${2:$1}">
+	<option value="${3:option}">${4:$3}</option>
+</select>${5}
+endsnippet
+
+snippet table
+<table id="${1:id}" class="${2:class}">
+	<thead>
+		<tr><th>${3:Header}</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>${4:Data}</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td>${5:Footer}</td></tr>
+	</tfoot>
+</table>${6}
+endsnippet
+
+snippet textarea
+<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+endsnippet
+
+snippet dfn
+<p>${1:some text}<dfn id="${2:id}">${3:To be defined}</dfn>${4:some texte}</p>
+<dl>
+	<dt>
+		<dfn>$3</dfn>
+	</dt>
+	<dl>${5:definition}</dl>
+</dl>${6}
+endsnippet
+
+snippet btn
+<button id="${1}" class="${2}" type="${3:button|reset|submit}">${4}</button>${5}
+endsnippet
+
+snippet header
+<header id="${1}" class="${2}">
+	<h1>${3}</h1>
+	<p>${4}</p>
+</header>${5}
+endsnippet
