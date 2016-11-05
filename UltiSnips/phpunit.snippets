@@ -1,0 +1,49 @@
+snippet class "class/extends phpunit"
+/**
+ * ${1:undocumented class}
+ *
+ * @package ${2:default}
+ * @author Tarik
+ */
+class $1 extends PHPUnit_Framework_TestCase
+{
+    ${3}
+}
+endsnippet
+
+snippet at
+$this->assertTrue($${1:variableToTest});
+${2}
+endsnippet
+
+snippet ae
+$this->assertEquals($${1:expected}, $${2:variableToTest});
+${3}
+endsnippet
+
+snippet aas
+$this->assertArraySubset($${1:arrayToFound}, $${2:arrayWhereFound});
+${3}
+endsnippet
+
+snippet see
+$this->setExpectedException(${1:ExceptionType}, ${2:ExceptionMessage});
+${3}
+endsnippet
+
+snippet dataProvider
+/**
+ * @dataProvider ${1:providerMethodName}
+ */
+public function test${2:testName}()
+{
+    ${3://assert}
+}
+
+public function $1(){
+    return array(
+        ${4:case one} => array(${5:expect, method param})
+        ${5}
+    );
+}
+endsnippet
