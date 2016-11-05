@@ -37,6 +37,9 @@ Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'gorodinskiy/vim-coloresque'
 Bundle 'Shougo/neocomplcache'
+" Snippets
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 " Browse
 Bundle 'scrooloose/nerdtree'
