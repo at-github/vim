@@ -23,3 +23,5 @@ cd -
 # Install, update and clean vim plugin
 vim +BundleInstall +qa
 vim +BundleUpdate +BundleClean +qall
+
+./bundle/YouCompleteMe/install.py --clang-completer
