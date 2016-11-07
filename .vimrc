@@ -36,7 +36,7 @@ Bundle 'fatih/vim-go'
 Bundle 'Prosumma/vim-pgsql'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'gorodinskiy/vim-coloresque'
-Bundle 'Shougo/neocomplcache'
+Bundle 'Valloric/YouCompleteMe'
 " Snippets
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
@@ -375,20 +375,6 @@ Bundle 'jiangxincode/vim-kite'
     " Highlight line modified
     map <Leader>l :GitGutterLineHighlightsToggle<CR>
 
-" neocomplcache
-    " Disable AutoComplPop
-    let g:acp_enableAtStartup = 0
-
-    " Use neocomplcache
-    let g:neocomplcache_enable_at_startup = 1
-
-    " Use smartcase
-    let g:neocomplcache_enable_smart_case = 1
-
-    " Set minimum syntax keyword length
-    let g:neocomplcache_min_syncax_length = 3
-    let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
 " EasyMotion
     let g:EasyMotion_smartcase = 1
     map  <Leader>/ <Plug>(easymotion-sn)
@@ -411,8 +397,8 @@ Bundle 'jiangxincode/vim-kite'
 " UtilSnips
     " Trigger configuration. Do not use <tab> if you use
     " https://github.com/Valloric/YouCompleteMe.
-    let g:UltiSnipsExpandTrigger="<tab>"
-    let g:UltiSnipsJumpForwardTrigger="<c-n>"
+    let g:UltiSnipsExpandTrigger="<leader><tab>"
+    let g:UltiSnipsJumpForwardTrigger="<c-g>"
     let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
     " If you want :UltiSnipsEdit to split your window.
