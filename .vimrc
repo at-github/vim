@@ -397,8 +397,8 @@ Bundle 'jiangxincode/vim-kite'
 " UtilSnips
     " Trigger configuration. Do not use <tab> if you use
     " https://github.com/Valloric/YouCompleteMe.
-    let g:UltiSnipsExpandTrigger="<tab>"
-    let g:UltiSnipsJumpForwardTrigger="<c-n>"
+    let g:UltiSnipsExpandTrigger="<leader><tab>"
+    let g:UltiSnipsJumpForwardTrigger="<c-g>"
     let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
     " If you want :UltiSnipsEdit to split your window.
