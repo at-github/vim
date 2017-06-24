@@ -18,7 +18,7 @@ After that move to this directory
 and launch script install.sh
 `./install.sh`
 
-###What does this script
+### What does this script
 
 * Create a relative symlinc of the *.vimrc* in your home
 * Create a relative symlinc of the *.nvimrc* in your home for neovim
@@ -34,44 +34,44 @@ For better colors, set in your .bashrc or another file sourced by it:
 Natively (without plugins)
 --------------------------
 
-###Shortcuts
+### Shortcuts
 
-####Leader
+#### Leader
 Is set on ","
 
-####Moving copen and errors
+#### Moving copen and errors
 * cprev  `<Leader>p`
 * cfirst `<Leader>P`
 * cnext  `<Leader>n`
 * cLast  `<Leader>N`
 
-####Moving visual selection
+#### Moving visual selection
 * Moving upper `<C-k>`
 * Moving lower `<C-j>`
 * Moving left  `<C-h>`
 * Moving right `<C-l>`
 
-####Switching hidden character visible
+#### Switching hidden character visible
 By default is it visible
 `<c-l>`
 
-####Folding - unfold current line / fold selection
+#### Folding - unfold current line / fold selection
 `<space>`
 
-####Spell check toggle
+#### Spell check toggle
 Dictionnary english and french as loaded
 `<Leader>z`
 
-####Move to definition/tag
+#### Move to definition/tag
 * Jump to definition                     `<F1>`
 * Jump to definition in vertical vsplit  `<F2>`
 * Jump to definition in horizontal split `<F3>`
 * Jump to definition in new tab split    `<F4>`
 
-####Refresh
+#### Refresh
 Refresh file in buffer `<F5>`
 
-####Graphical
+#### Graphical
 Toggle graphical information with `<leader>l`
 
 ![Screenshot](neovim-graphic-more.png)
@@ -79,7 +79,7 @@ Toggle graphical information with `<leader>l`
 
 Neovim
 ------
-###Shortcuts
+### Shortcuts
 
 * `ts` new term in split
 * `tv` new term in vertical split
@@ -88,25 +88,25 @@ Neovim
 With plugins
 ------------
 
-###Shortcuts
+### Shortcuts
 
-####Ctrl-p
+#### Ctrl-p
 Search tag using *Ctrl-p* `<space>p`
 
-####NERDTree
+#### NERDTree
 Toggle *NERDTree* browser `<Leader>e`
 
-####Tagbar
+#### Tagbar
 Toggle *Tagbar* `<Leader>t`
 
-####NERDTree & Tagbar
+#### NERDTree & Tagbar
 Toggle relative *NERDTree* and *Tagbar* `<Leader><Space>`
 
-####Sparkup
+#### Sparkup
 Use *Sparkup* after write `<c-e>`
 
-####GitGutter
+#### GitGutter
 Toggle GitGutter highlight lines `<Leader>l`
 
-####Easymotion
+#### Easymotion
 Use *Easymotion* search `<Leader>/`
