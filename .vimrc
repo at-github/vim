@@ -70,7 +70,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'vim-utils/vim-man'
 Bundle 'chrisbra/csv.vim'
-Bundle 'jiangxincode/vim-kite'
 
 " Brief help
 " :BundleList          - list configured bundles
