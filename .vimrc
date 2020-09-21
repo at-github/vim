@@ -345,7 +345,7 @@ Bundle 'chrisbra/csv.vim'
     set cursorcolumn
 
 " Nerdtree-git-plugin
-    let g:NERDTreeIndicatorMapCustom = {
+    let g:NERDTreeGitStatusIndicatorMapCustom = {
         \ "Modified" : "⚡",
         \ "Staged"   : "+",
         \ "Untracked": "✭",
